@@ -142,7 +142,6 @@ C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\TeamCell\bin\Debug\
 C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
 C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\TeamCell\obj\Debug\TeamCell.exe
 C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\TeamCell\obj\Debug\TeamCell.pdb
-
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe.config
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.pdb
@@ -248,3 +247,108 @@ C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debu
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.pdb
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Pais.frmCountry.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe.config
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.pdb
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.pdb
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Controller.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Data.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Printing.v17.2.Core.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Utils.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraBars.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraEditors.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraGrid.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraLayout.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraPrinting.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Model.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Sparkline.v17.2.Core.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.RichEdit.v17.2.Core.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraTreeList.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Office.v17.2.Core.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Images.v17.2.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Controller.pdb
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Model.pdb
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Data.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Printing.v17.2.Core.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Utils.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraBars.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraEditors.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraGrid.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraLayout.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraPrinting.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Pdf.v17.2.Core.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Sparkline.v17.2.Core.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.RichEdit.v17.2.Core.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.XtraTreeList.v17.2.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.Office.v17.2.Core.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.Data.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.Data.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.Data.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Data.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.Utils.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.Utils.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.Utils.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Utils.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.csprojResolveAssemblyReference.cache
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Pais.frmCountry.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Clientes.frmClient.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmLogin.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmMain.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Notificacion.FrmSuccess.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Properties.Resources.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmEmpleado.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmUsuarios.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProduct.resources
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.csproj.GenerateResource.Cache
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe.licenses
