@@ -47,9 +47,9 @@
   <ItemGroup>
     <Compile Include="Conecction.cs" />
     <Compile Include="DAL\TeamCellInicializer.cs" />
-    <Compile Include="Migrations\201908280549293_InitialCreate.cs" />
-    <Compile Include="Migrations\201908280549293_InitialCreate.Designer.cs">
-      <DependentUpon>201908280549293_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201908280650258_InitialCreate.cs" />
+    <Compile Include="Migrations\201908280650258_InitialCreate.Designer.cs">
+      <DependentUpon>201908280650258_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -75,8 +75,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908280549293_InitialCreate.resx">
-      <DependentUpon>201908280549293_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908280650258_InitialCreate.resx">
+      <DependentUpon>201908280650258_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

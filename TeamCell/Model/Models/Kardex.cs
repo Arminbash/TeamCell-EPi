@@ -38,9 +38,9 @@ namespace Model.Models
 
                 modelBuilder.Entity<Kardex>().HasKey<int>(s => s.IdKardex);
                 modelBuilder.Entity<Kardex>().Property(x => x.IdKardex).HasColumnName("IdKardex");
-                modelBuilder.Entity<Kardex>().Property(x => x.EntryAmount).HasColumnName("EntryAmount").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<Kardex>().Property(x => x.OutputAmount).HasColumnName("OutputAmount").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<Kardex>().Property(x => x.Stock).HasColumnName("Stock").HasColumnType("decimal(18,2)");
+                modelBuilder.Entity<Kardex>().Property(x => x.EntryAmount).HasColumnName("EntryAmount").HasColumnType("decimal").HasPrecision(18, 2);
+                modelBuilder.Entity<Kardex>().Property(x => x.OutputAmount).HasColumnName("OutputAmount").HasColumnType("decimal").HasPrecision(18, 2);
+                modelBuilder.Entity<Kardex>().Property(x => x.Stock).HasColumnName("Stock").HasColumnType("decimal").HasPrecision(18, 2);
                 modelBuilder.Entity<Kardex>().Property(x => x.IdDocument).HasColumnName("IdDocument").HasColumnType("int");
                 modelBuilder.Entity<Kardex>().Property(x => x.Document).HasColumnName("Document").HasMaxLength(200);
             }

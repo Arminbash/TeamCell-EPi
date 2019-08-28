@@ -26,7 +26,7 @@ namespace Model.Models
 
                 modelBuilder.Entity<CostingAverage>().HasKey<int>(s => s.IdCostingAverage);
                 modelBuilder.Entity<CostingAverage>().Property(x => x.IdCostingAverage).HasColumnName("IdCostingAverage");
-                modelBuilder.Entity<CostingAverage>().Property(x => x.Cost).HasColumnName("Cost").HasColumnType("decimal(18,2)");
+                modelBuilder.Entity<CostingAverage>().Property(x => x.Cost).HasColumnName("Cost").HasColumnType("decimal").HasPrecision(18, 2);
             }
         }
     }

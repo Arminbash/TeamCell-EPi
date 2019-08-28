@@ -30,11 +30,11 @@ namespace Model.Models
 
                 modelBuilder.Entity<CostingPeps>().HasKey<int>(s => s.IdCostingPeps);
                 modelBuilder.Entity<CostingPeps>().Property(x => x.IdCostingPeps).HasColumnName("IdCostingPeps");
-                modelBuilder.Entity<CostingPeps>().Property(x => x.EntryAmount).HasColumnName("EntryAmount").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<CostingPeps>().Property(x => x.EntryCost).HasColumnName("EntryCost").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<CostingPeps>().Property(x => x.OutputQuantity).HasColumnName("OutputQuantity").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<CostingPeps>().Property(x => x.OutputCost).HasColumnName("OutputCost").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<CostingPeps>().Property(x => x.Available).HasColumnName("Available").HasColumnType("decimal(18,2)");
+                modelBuilder.Entity<CostingPeps>().Property(x => x.EntryQuantity).HasColumnName("EntryQuantity").HasColumnType("decimal").HasPrecision(18,2);
+                modelBuilder.Entity<CostingPeps>().Property(x => x.EntryCost).HasColumnName("EntryCost").HasColumnType("decimal").HasPrecision(18, 2);
+                modelBuilder.Entity<CostingPeps>().Property(x => x.OutputQuantity).HasColumnName("OutputQuantity").HasColumnType("decimal").HasPrecision(18, 2);
+                modelBuilder.Entity<CostingPeps>().Property(x => x.OutputCost).HasColumnName("OutputCost").HasColumnType("decimal").HasPrecision(18, 2);
+                modelBuilder.Entity<CostingPeps>().Property(x => x.Available).HasColumnName("Available").HasColumnType("decimal").HasPrecision(18, 2);
             }
         }
     }
