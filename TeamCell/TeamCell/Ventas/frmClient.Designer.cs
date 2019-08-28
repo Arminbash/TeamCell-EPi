@@ -168,8 +168,8 @@
             // 
             // colFirstName
             // 
-            this.colFirstName.Caption = "Name";
-            this.colFirstName.FieldName = "Name";
+            this.colFirstName.Caption = "Primer Nombre";
+            this.colFirstName.FieldName = "FirstName";
             this.colFirstName.Name = "colFirstName";
             this.colFirstName.Visible = true;
             this.colFirstName.VisibleIndex = 0;
@@ -185,7 +185,7 @@
             // colIdClient
             // 
             this.colIdClient.Caption = "IdClient";
-            this.colIdClient.FieldName = "Id";
+            this.colIdClient.FieldName = "IdClient";
             this.colIdClient.Name = "colIdClient";
             // 
             // spIdClient

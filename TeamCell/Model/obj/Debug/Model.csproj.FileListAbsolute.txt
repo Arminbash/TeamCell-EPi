@@ -19,15 +19,14 @@ C:\Users\Arminbash\Documents\GitHub\Proyecto-EPI\TeamCell\Model\obj\Debug\Model.
 C:\Users\Arminbash\Documents\GitHub\Proyecto-EPI\TeamCell\Model\obj\Debug\Model.pdb
 C:\Users\Arminbash\Documents\GitHub\Proyecto-EPI\TeamCell\Model\obj\Debug\Model.Migrations.IntialCreate.resources
 C:\Users\Arminbash\Documents\GitHub\Proyecto-EPI\TeamCell\Model\obj\Debug\Model.csproj.GenerateResource.Cache
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\bin\Debug\Model.dll.config
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\bin\Debug\Model.dll
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\bin\Debug\Model.pdb
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.dll
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.xml
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.Migrations.InitialCreate.resources
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csproj.GenerateResource.Cache
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.dll
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.pdb
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\bin\Debug\Model.dll.config
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\bin\Debug\Model.dll
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\bin\Debug\Model.pdb
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\bin\Debug\EntityFramework.dll
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\bin\Debug\EntityFramework.xml
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\obj\Debug\Model.dll
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\obj\Debug\Model.pdb
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\obj\Debug\Model.Migrations.InitialCreate.resources
+C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Model\obj\Debug\Model.csproj.GenerateResource.Cache

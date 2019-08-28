@@ -21,7 +21,7 @@ namespace Model
        public virtual DbSet<Brand> Brand { get; set; }
        public virtual DbSet<Provider> Provider { get; set; }
        
-
+        public virtual DbSet<Country> Country { get; set; }
         public virtual DbSet<Product> Product { get; set; }
 
        protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -34,6 +34,7 @@ namespace Model
            new Product.Map (ref modelBuilder);
            new Brand.Map(ref modelBuilder);
            new Provider.Map(ref modelBuilder);
+            new Country.Map(ref modelBuilder);
             base.OnModelCreating(modelBuilder);
        }
     }

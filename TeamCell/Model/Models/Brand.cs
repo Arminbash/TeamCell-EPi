@@ -10,12 +10,14 @@ namespace Model.Models
 {
     public class Brand
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdBrand { get; set; }
         public string NameBrand { get; set; }
        
         public bool Status { get; set; }
         public ICollection<Product> Producto { get; set; }
+
+       
 
         public class Map
         {

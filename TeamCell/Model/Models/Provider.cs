@@ -10,14 +10,19 @@ namespace Model.Models
 {
     public class Provider
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
         public int IdProvider { get; set; }
         public string NameProvider { get; set; }
-        public string Address { get; set; }
-        public bool Status { get; set; }
-        public ICollection<Product> Producto { get; set; }
 
-        // public virtual ICollection<Product> Productos { get; set; }
+        [ForeignKey("Country")]
+        public Nullable<int> Id_Country { get; set; }
+        public Country Country { get; set; }
+        public bool Status { get; set; }
+        
+        public ICollection<Product> Producto { get; set; }
+        public ICollection<Country> Pais { get; set; }
+       
 
         public class Map
         {
@@ -29,7 +34,6 @@ namespace Model.Models
                 modelBuilder.Entity<Provider>().HasKey<int>(s => s.IdProvider);
                 modelBuilder.Entity<Provider>().Property(x => x.IdProvider).HasColumnName("Id");
                 modelBuilder.Entity<Provider>().Property(x => x.NameProvider).HasColumnName("Name").HasMaxLength(200);
-                modelBuilder.Entity<Provider>().Property(x => x.Address).HasColumnName("Address").HasMaxLength(200);
                 modelBuilder.Entity<Provider>().Property(x => x.Status).HasColumnName("Status").HasColumnType("Bit");
             }
         }
