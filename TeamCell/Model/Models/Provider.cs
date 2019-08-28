@@ -11,7 +11,6 @@ namespace Model.Models
     public class Provider
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-
         public int IdProvider { get; set; }
         public string NameProvider { get; set; }
         public string Address { get; set; }

@@ -19,15 +19,8 @@ namespace Model.Models
         public Brand Brand { get; set; }
         public Nullable<int> Id_Provider { get; set; }
         public Provider Provider { get; set; }
-
         public bool Status { get; set; }
-
-        
-
-
-
-
-
+   
         public class Map
         {
             public Map (ref DbModelBuilder modelbuilder)

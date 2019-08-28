@@ -17,8 +17,6 @@ namespace Model.Models
         public bool Status { get; set; }
         public ICollection<Product> Producto { get; set; }
 
-       
-
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)
