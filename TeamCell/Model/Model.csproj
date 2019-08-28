@@ -51,17 +51,26 @@
     <Compile Include="Migrations\201908280650258_InitialCreate.Designer.cs">
       <DependentUpon>201908280650258_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908280750038_SegundaMigracion.cs" />
+    <Compile Include="Migrations\201908280750038_SegundaMigracion.Designer.cs">
+      <DependentUpon>201908280750038_SegundaMigracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Billing.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\CostingAverage.cs" />
     <Compile Include="Models\CostingPeps.cs" />
     <Compile Include="Models\CostingWeighted.cs" />
     <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\DetailBilling.cs" />
+    <Compile Include="Models\DetailPurchase.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Kardex.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Provider.cs" />
+    <Compile Include="Models\Purchases.cs" />
+    <Compile Include="Models\Segment.cs" />
     <Compile Include="Models\TempModels\TempUser.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Warehouse.cs" />
@@ -77,6 +86,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201908280650258_InitialCreate.resx">
       <DependentUpon>201908280650258_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908280750038_SegundaMigracion.resx">
+      <DependentUpon>201908280750038_SegundaMigracion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
