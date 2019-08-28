@@ -248,7 +248,6 @@ C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debu
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.pdb
 <<<<<<< HEAD
-C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Pais.frmCountry.resources
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe.config
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.pdb
