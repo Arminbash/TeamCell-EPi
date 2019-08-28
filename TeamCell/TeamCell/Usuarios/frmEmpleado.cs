@@ -131,5 +131,10 @@ namespace TeamCell
             if (grdList.GetFocusedRowCellValue(colIdEmployee) != null)
                 spIdEmpleado.Value = (int)grdList.GetFocusedRowCellValue(colIdEmployee);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

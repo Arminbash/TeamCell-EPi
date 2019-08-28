@@ -46,6 +46,7 @@ C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\De
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.dll
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.pdb
+<<<<<<< HEAD
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Controller.dll.config
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Controller.dll
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Controller.pdb
@@ -73,3 +74,5 @@ C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Controller\obj\Debug\Contr
 C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.csproj.CopyComplete
 C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.dll
 C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.pdb
+=======
+>>>>>>> 0bde1b848a70351f4342e3678de61ab1d7cb482d

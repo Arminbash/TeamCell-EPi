@@ -33,6 +33,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cboBrand = new DevExpress.XtraEditors.DateEdit();
             this.label6 = new System.Windows.Forms.Label();
             this.txtProvider = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,13 +52,12 @@
             this.colIdProduct = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.cboBrand = new DevExpress.XtraEditors.DateEdit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spIdProduct.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -81,6 +81,7 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnEdit
             // 
@@ -119,6 +120,18 @@
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // cboBrand
+            // 
+            this.cboBrand.EditValue = null;
+            this.cboBrand.Location = new System.Drawing.Point(371, 17);
+            this.cboBrand.Name = "cboBrand";
+            this.cboBrand.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboBrand.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboBrand.Size = new System.Drawing.Size(152, 20);
+            this.cboBrand.TabIndex = 19;
             // 
             // label6
             // 
@@ -284,18 +297,6 @@
             this.bunifuElipse2.ElipseRadius = 7;
             this.bunifuElipse2.TargetControl = this.btnEdit;
             // 
-            // cboBrand
-            // 
-            this.cboBrand.EditValue = null;
-            this.cboBrand.Location = new System.Drawing.Point(371, 17);
-            this.cboBrand.Name = "cboBrand";
-            this.cboBrand.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboBrand.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboBrand.Size = new System.Drawing.Size(152, 20);
-            this.cboBrand.TabIndex = 19;
-            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,11 +312,11 @@
             this.Load += new System.EventHandler(this.FrmProduct_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spIdProduct.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboBrand.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
