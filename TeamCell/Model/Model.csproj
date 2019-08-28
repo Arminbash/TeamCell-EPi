@@ -54,12 +54,17 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\CostingAverage.cs" />
+    <Compile Include="Models\CostingPeps.cs" />
+    <Compile Include="Models\CostingWeighted.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Kardex.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Provider.cs" />
     <Compile Include="Models\TempModels\TempUser.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Warehouse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamCellContext.cs" />
   </ItemGroup>

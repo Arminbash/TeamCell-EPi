@@ -22,11 +22,11 @@ namespace Model.Models
             public Map(ref DbModelBuilder modelBuilder)
             {
                 modelBuilder.HasDefaultSchema("Inventory");
-                modelBuilder.Entity<CostingAverage>().ToTable("CostingWeighted");
+                modelBuilder.Entity<CostingWeighted>().ToTable("CostingWeighted");
 
-                modelBuilder.Entity<CostingAverage>().HasKey<int>(s => s.IdCostingWeighted);
-                modelBuilder.Entity<CostingAverage>().Property(x => x.IdCostingWeighted).HasColumnName("IdCostingWeighted");
-                modelBuilder.Entity<CostingAverage>().Property(x => x.Cost).HasColumnName("Cost").HasColumnType("decimal(18,2)");
+                modelBuilder.Entity<CostingWeighted>().HasKey<int>(s => s.IdCostingWeighted);
+                modelBuilder.Entity<CostingWeighted>().Property(x => x.IdCostingWeighted).HasColumnName("IdCostingWeighted");
+                modelBuilder.Entity<CostingWeighted>().Property(x => x.Cost).HasColumnName("Cost").HasColumnType("decimal(18,2)");
             }
         }
     }
