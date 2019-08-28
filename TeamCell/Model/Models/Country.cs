@@ -29,7 +29,9 @@ namespace Model.Models
                 modelBuilder.Entity<Country>().HasKey<int>(s => s.IdCountry);
                 modelBuilder.Entity<Country>().Property(x => x.IdCountry).HasColumnName("Id");
                 modelBuilder.Entity<Country>().Property(x => x.NameCountry).HasColumnName("Name").HasMaxLength(200);
+
                 modelBuilder.Entity<Country>().Property(x => x.Status).HasColumnName("Status").HasColumnType("bit");
+
             }
         }
     }

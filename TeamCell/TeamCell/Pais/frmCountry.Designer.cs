@@ -1,6 +1,6 @@
-﻿namespace TeamCell.Clientes
+﻿namespace TeamCell.Pais
 {
-    partial class frmClient
+    partial class frmCountry
     {
         /// <summary>
         /// Required designer variable.
@@ -28,44 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClient));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCountry));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNombrePais = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.grdcList = new DevExpress.XtraGrid.GridControl();
             this.grdList = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colFirstName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIdClient = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.spIdClient = new DevExpress.XtraEditors.SpinEdit();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.colPais = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colIdCountry = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.spIdCountry = new DevExpress.XtraEditors.SpinEdit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spIdClient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spIdCountry.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnEdit);
             this.groupBox1.Controls.Add(this.btnSave);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtCedula);
-            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.txtNombrePais);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(26, 12);
+            this.groupBox1.Location = new System.Drawing.Point(26, 25);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(569, 117);
-            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
+            // 
+            // txtNombrePais
+            // 
+            this.txtNombrePais.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombrePais.Location = new System.Drawing.Point(139, 17);
+            this.txtNombrePais.Name = "txtNombrePais";
+            this.txtNombrePais.Size = new System.Drawing.Size(153, 23);
+            this.txtNombrePais.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(15, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = " Pais  :";
             // 
             // btnEdit
             // 
@@ -105,49 +115,13 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(23, 61);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 18);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Cedula:";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCedula.Location = new System.Drawing.Point(139, 59);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(153, 23);
-            this.txtCedula.TabIndex = 15;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(139, 17);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(153, 23);
-            this.txtNombre.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(15, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = " Nombres:";
-            // 
             // grdcList
             // 
-            this.grdcList.Location = new System.Drawing.Point(12, 164);
+            this.grdcList.Location = new System.Drawing.Point(4, 164);
             this.grdcList.MainView = this.grdList;
             this.grdcList.Name = "grdcList";
-            this.grdcList.Size = new System.Drawing.Size(860, 352);
-            this.grdcList.TabIndex = 12;
+            this.grdcList.Size = new System.Drawing.Size(860, 318);
+            this.grdcList.TabIndex = 13;
             this.grdcList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdList});
             this.grdcList.DoubleClick += new System.EventHandler(this.grdcList_DoubleClick);
@@ -155,9 +129,8 @@
             // grdList
             // 
             this.grdList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colFirstName,
-            this.gridColumn1,
-            this.colIdClient});
+            this.colPais,
+            this.colIdCountry});
             this.grdList.GridControl = this.grdcList;
             this.grdList.Name = "grdList";
             this.grdList.OptionsBehavior.Editable = false;
@@ -166,72 +139,53 @@
             this.grdList.OptionsView.ShowFooter = true;
             this.grdList.OptionsView.ShowGroupPanel = false;
             // 
-            // colFirstName
+            // colPais
             // 
-            this.colFirstName.Caption = "Primer Nombre";
-            this.colFirstName.FieldName = "FirstName";
-            this.colFirstName.Name = "colFirstName";
-            this.colFirstName.Visible = true;
-            this.colFirstName.VisibleIndex = 0;
+            this.colPais.Caption = "Pais";
+            this.colPais.FieldName = "NameCountry";
+            this.colPais.Name = "colPais";
+            this.colPais.Visible = true;
+            this.colPais.VisibleIndex = 0;
             // 
-            // gridColumn1
+            // colIdCountry
             // 
-            this.gridColumn1.Caption = "Cedula";
-            this.gridColumn1.FieldName = "CardIdentification";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
+            this.colIdCountry.Caption = "IdCountry";
+            this.colIdCountry.FieldName = "IdCountry";
+            this.colIdCountry.Name = "colIdCountry";
             // 
-            // colIdClient
+            // spIdCountry
             // 
-            this.colIdClient.Caption = "IdClient";
-            this.colIdClient.FieldName = "IdClient";
-            this.colIdClient.Name = "colIdClient";
-            // 
-            // spIdClient
-            // 
-            this.spIdClient.EditValue = new decimal(new int[] {
+            this.spIdCountry.EditValue = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.spIdClient.Location = new System.Drawing.Point(601, 109);
-            this.spIdClient.Name = "spIdClient";
-            this.spIdClient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.spIdCountry.Location = new System.Drawing.Point(601, 122);
+            this.spIdCountry.Name = "spIdCountry";
+            this.spIdCountry.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spIdClient.Size = new System.Drawing.Size(100, 20);
-            this.spIdClient.TabIndex = 13;
-            this.spIdClient.Visible = false;
-            this.spIdClient.EditValueChanged += new System.EventHandler(this.spIdClient_EditValueChanged);
+            this.spIdCountry.Size = new System.Drawing.Size(100, 20);
+            this.spIdCountry.TabIndex = 14;
+            this.spIdCountry.Visible = false;
+            this.spIdCountry.EditValueChanged += new System.EventHandler(this.spIdCountry_EditValueChanged);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 7;
-            this.bunifuElipse1.TargetControl = this.btnSave;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 7;
-            this.bunifuElipse2.TargetControl = this.btnSave;
-            // 
-            // frmClient
+            // frmCountry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.spIdClient);
+            this.ClientSize = new System.Drawing.Size(868, 522);
+            this.Controls.Add(this.spIdCountry);
             this.Controls.Add(this.grdcList);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmClient";
-            this.Text = "Clientes";
-            this.Load += new System.EventHandler(this.frmClient_Load);
+            this.Name = "frmCountry";
+            this.Text = "frmCountry";
+            this.Load += new System.EventHandler(this.frmCountry_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spIdClient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spIdCountry.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -241,17 +195,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtNombrePais;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.GridControl grdcList;
         private DevExpress.XtraGrid.Views.Grid.GridView grdList;
-        private DevExpress.XtraGrid.Columns.GridColumn colFirstName;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn colIdClient;
-        private DevExpress.XtraEditors.SpinEdit spIdClient;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private DevExpress.XtraGrid.Columns.GridColumn colPais;
+        private DevExpress.XtraGrid.Columns.GridColumn colIdCountry;
+        private DevExpress.XtraEditors.SpinEdit spIdCountry;
     }
 }
