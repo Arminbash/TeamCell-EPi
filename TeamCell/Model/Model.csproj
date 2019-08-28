@@ -65,12 +65,9 @@
     <Compile Include="Models\Kardex.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Provider.cs" />
-<<<<<<< HEAD
     <Compile Include="Models\TempModels\TeamProvider.cs" />
-=======
     <Compile Include="Models\Purchases.cs" />
     <Compile Include="Models\Segment.cs" />
->>>>>>> 4b375b2f8f7e2523cc0f727708659b964e8f0b4d
     <Compile Include="Models\TempModels\TempUser.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Warehouse.cs" />
