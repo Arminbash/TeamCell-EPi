@@ -184,6 +184,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Data-Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Command-Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{c3b5f82b-ac0a-4f1d-a8ae-fb57607ee79e}</Project>
       <Name>Controller</Name>
@@ -192,15 +201,6 @@
       <Project>{e1d9cf49-c0dc-421c-81b7-a574d953e3da}</Project>
       <Name>Model</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Data-Edit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Command-Reset.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Check.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
