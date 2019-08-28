@@ -106,5 +106,10 @@ namespace TeamCell.Ventas
                 spIdProduct.Value = (int)grdList.GetFocusedRowCellValue(colIdProduct);
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
