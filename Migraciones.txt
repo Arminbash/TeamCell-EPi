@@ -1,0 +1,7 @@
+Enable-Migrations -ProjectName "Model"
+
+NombreMigracion = Nombre de la migracionm deben especificar que nombre tendra
+Add-Migration NombreMigracion -ProjectName "Model"
+
+
+Update-Database -ProjectName "Model" -verbose
