@@ -16,6 +16,8 @@ namespace Model.Models
         public string Description { get; set; }
         public Boolean Status { get; set; }
 
+        public ICollection<Kardex> Kardex { get; set; }
+
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)

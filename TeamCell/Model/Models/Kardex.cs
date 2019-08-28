@@ -18,6 +18,14 @@ namespace Model.Models
         public int IdDocument {get; set;}
         public string Document {get; set;}
 
+        [ForeignKey("Product")]
+        public Nullable<int> IdProducto { get; set; }
+        public Product Product { get; set; }
+
+        [ForeignKey("Warehouse")]
+        public Nullable<int> IdWarehouse { get; set; }
+        public Warehouse Warehouse { get; set; }
+
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)
