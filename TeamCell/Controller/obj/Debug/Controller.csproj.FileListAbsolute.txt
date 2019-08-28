@@ -34,3 +34,15 @@ C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Controller\bin\Debu
 C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Controller\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Controller\obj\Debug\Controller.dll
 C:\Users\EDDY\Documents\Visual Studio 2015\Projects\TeamCell\Controller\obj\Debug\Controller.pdb
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Controller.dll.config
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Controller.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Controller.pdb
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\EntityFramework.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Model.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\Model.pdb
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\EntityFramework.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.dll
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.pdb
