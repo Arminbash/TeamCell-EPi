@@ -26,20 +26,23 @@ namespace Model.Models
         public Nullable<int> IdWarehouse { get; set; }
         public Warehouse Warehouse { get; set; }
 
+        public ICollection<CostingPeps> CostingPeps { get; set; }
+        public ICollection<CostingAverage> CostingAverage { get; set; }
+        public ICollection<CostingWeighted> CostingWeighted { get; set; }
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)
             {
                 modelBuilder.HasDefaultSchema("Inventory");
-                modelBuilder.Entity<Client>().ToTable("Kardex");
+                modelBuilder.Entity<Kardex>().ToTable("Kardex");
 
-                modelBuilder.Entity<Client>().HasKey<int>(s => s.IdKardex);
-                modelBuilder.Entity<Client>().Property(x => x.IdKardex).HasColumnName("IdKardex");
-                modelBuilder.Entity<Client>().Property(x => x.EntryAmount).HasColumnName("EntryAmount").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<Client>().Property(x => x.OutputAmount).HasColumnName("OutputAmount").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<Client>().Property(x => x.Stock).HasColumnName("Stock").HasColumnType("decimal(18,2)");
-                modelBuilder.Entity<Client>().Property(x => x.IdDocument).HasColumnName("IdDocument").HasColumnType("int");
-                modelBuilder.Entity<Client>().Property(x => x.Document).HasColumnName("Document").HasMaxLength(200);
+                modelBuilder.Entity<Kardex>().HasKey<int>(s => s.IdKardex);
+                modelBuilder.Entity<Kardex>().Property(x => x.IdKardex).HasColumnName("IdKardex");
+                modelBuilder.Entity<Kardex>().Property(x => x.EntryAmount).HasColumnName("EntryAmount").HasColumnType("decimal(18,2)");
+                modelBuilder.Entity<Kardex>().Property(x => x.OutputAmount).HasColumnName("OutputAmount").HasColumnType("decimal(18,2)");
+                modelBuilder.Entity<Kardex>().Property(x => x.Stock).HasColumnName("Stock").HasColumnType("decimal(18,2)");
+                modelBuilder.Entity<Kardex>().Property(x => x.IdDocument).HasColumnName("IdDocument").HasColumnType("int");
+                modelBuilder.Entity<Kardex>().Property(x => x.Document).HasColumnName("Document").HasMaxLength(200);
             }
         }
     }
