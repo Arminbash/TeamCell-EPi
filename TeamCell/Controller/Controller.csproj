@@ -51,9 +51,16 @@
     <Compile Include="Controllers\BrandController.cs" />
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\CountryController.cs" />
+    <Compile Include="Controllers\DetailPurchaseController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\KardexController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\ProviderControlles.cs" />
+=======
+    <Compile Include="Controllers\PurchaseController.cs" />
+    <Compile Include="Controllers\SegmentController.cs" />
+>>>>>>> 4b375b2f8f7e2523cc0f727708659b964e8f0b4d
     <Compile Include="Methods\CryptoGraphic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\UserController.cs" />

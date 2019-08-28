@@ -234,6 +234,7 @@ C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debu
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ja\DevExpress.Office.v17.2.Core.resources.dll
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.csprojResolveAssemblyReference.cache
+C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Pais.frmCountry.resources
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Clientes.frmClient.resources
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmLogin.resources
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmMain.resources
@@ -246,6 +247,7 @@ C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debu
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe.licenses
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.pdb
+<<<<<<< HEAD
 C:\Users\Francisco Rios\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Pais.frmCountry.resources
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe.config
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
@@ -354,3 +356,5 @@ C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe.licenses
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmBrand.resources
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProvider.resources
+=======
+>>>>>>> 4b375b2f8f7e2523cc0f727708659b964e8f0b4d

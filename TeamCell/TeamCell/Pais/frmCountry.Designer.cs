@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCountry));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtNombrePais = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtNombrePais = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grdcList = new DevExpress.XtraGrid.GridControl();
             this.grdList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colPais = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIdCountry = new DevExpress.XtraGrid.Columns.GridColumn();
             this.spIdCountry = new DevExpress.XtraEditors.SpinEdit();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).BeginInit();
@@ -58,24 +61,6 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
-            // 
-            // txtNombrePais
-            // 
-            this.txtNombrePais.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombrePais.Location = new System.Drawing.Point(139, 17);
-            this.txtNombrePais.Name = "txtNombrePais";
-            this.txtNombrePais.Size = new System.Drawing.Size(153, 23);
-            this.txtNombrePais.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(15, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = " Pais  :";
             // 
             // btnEdit
             // 
@@ -107,13 +92,31 @@
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(369, 13);
+            this.btnSave.Location = new System.Drawing.Point(369, 17);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(156, 37);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtNombrePais
+            // 
+            this.txtNombrePais.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombrePais.Location = new System.Drawing.Point(139, 17);
+            this.txtNombrePais.Name = "txtNombrePais";
+            this.txtNombrePais.Size = new System.Drawing.Size(153, 23);
+            this.txtNombrePais.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(15, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = " Pais  :";
             // 
             // grdcList
             // 
@@ -169,6 +172,16 @@
             this.spIdCountry.Visible = false;
             this.spIdCountry.EditValueChanged += new System.EventHandler(this.spIdCountry_EditValueChanged);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 7;
+            this.bunifuElipse1.TargetControl = this.btnSave;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 7;
+            this.bunifuElipse2.TargetControl = this.btnEdit;
+            // 
             // frmCountry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,5 +215,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPais;
         private DevExpress.XtraGrid.Columns.GridColumn colIdCountry;
         private DevExpress.XtraEditors.SpinEdit spIdCountry;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }
 }
