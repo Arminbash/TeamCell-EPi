@@ -19,7 +19,7 @@ namespace Model.Models
         [ForeignKey("Client")]
         public Nullable<int> IdClient { get; set; }
         public Client Client { get; set; }
-        public ICollection<DetailBilling> Client { get; set; }
+        public ICollection<DetailBilling> DetailBilling { get; set; }
 
         public class Map
         {

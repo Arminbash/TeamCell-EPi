@@ -76,3 +76,4 @@ C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Controller\obj\Debug\Contr
 C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.pdb
 =======
 >>>>>>> 0bde1b848a70351f4342e3678de61ab1d7cb482d
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
