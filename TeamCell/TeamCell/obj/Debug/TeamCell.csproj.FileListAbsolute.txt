@@ -352,3 +352,6 @@ C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProduct.resources
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.csproj.GenerateResource.Cache
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe.licenses
+C:\Users\Mscorp\Videos\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe.config
+C:\Users\Mscorp\Videos\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
+C:\Users\Mscorp\Videos\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.pdb

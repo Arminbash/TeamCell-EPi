@@ -56,12 +56,14 @@
       <DependentUpon>201908280750038_SegundaMigracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Billing.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\CostingAverage.cs" />
     <Compile Include="Models\CostingPeps.cs" />
     <Compile Include="Models\CostingWeighted.cs" />
     <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\DetailBilling.cs" />
     <Compile Include="Models\DetailPurchase.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Kardex.cs" />
