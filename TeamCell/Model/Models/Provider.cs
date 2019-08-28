@@ -21,7 +21,7 @@ namespace Model.Models
         public bool Status { get; set; }
 
         public virtual ICollection<Product> Producto { get; set; }
-        
+        public virtual ICollection<Purchases> Purchases { get; set; }
         
        
 
