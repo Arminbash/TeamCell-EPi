@@ -24,6 +24,9 @@ namespace Model
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Warehouse> Warehouse {get; set;}
         public virtual DbSet<Kardex> Kardex {get; set;}
+        public virtual DbSet<CostingPeps> CostingPeps {get; set;}
+        public virtual DbSet<CostingAverage> CostingAverage {get; set;}
+        public virtual DbSet<CostingWeighted> CostingWeighted {get; set;}
 
        protected override void OnModelCreating(DbModelBuilder modelBuilder)
        {
@@ -38,6 +41,9 @@ namespace Model
            new Country.Map(ref modelBuilder);
            new Warehouse.Map(ref modelBuilder);
            new Kardex.Map(ref modelBuilder);
+           new CostingPeps.Map(ref modelBuilder);
+           new CostingAverage.Map(ref modelBuilder);
+           new CostingWeighted.Map(ref modelBuilder);
 
             base.OnModelCreating(modelBuilder);
        }
