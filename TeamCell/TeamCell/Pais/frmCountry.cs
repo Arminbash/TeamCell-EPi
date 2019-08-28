@@ -69,7 +69,7 @@ namespace TeamCell.Pais
                 CountryController contCont = new CountryController();
                 if (contCont.AddOrUpdateCountry(country))
                 {
-                    FrmSuccess.ConfirmacionFrom("Guardado");
+                    FrmSuccess.ConfirmacionFrom("Editado");
                     limpiar();
                 }
                 else
