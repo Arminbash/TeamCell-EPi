@@ -47,13 +47,9 @@
   <ItemGroup>
     <Compile Include="Conecction.cs" />
     <Compile Include="DAL\TeamCellInicializer.cs" />
-    <Compile Include="Migrations\201908280650258_InitialCreate.cs" />
-    <Compile Include="Migrations\201908280650258_InitialCreate.Designer.cs">
-      <DependentUpon>201908280650258_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908280750038_SegundaMigracion.cs" />
-    <Compile Include="Migrations\201908280750038_SegundaMigracion.Designer.cs">
-      <DependentUpon>201908280750038_SegundaMigracion.cs</DependentUpon>
+    <Compile Include="Migrations\201908281603121_NombreMigracion.cs" />
+    <Compile Include="Migrations\201908281603121_NombreMigracion.Designer.cs">
+      <DependentUpon>201908281603121_NombreMigracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Billing.cs" />
@@ -69,12 +65,9 @@
     <Compile Include="Models\Kardex.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Provider.cs" />
-<<<<<<< HEAD
     <Compile Include="Models\TempModels\TeamProvider.cs" />
-=======
     <Compile Include="Models\Purchases.cs" />
     <Compile Include="Models\Segment.cs" />
->>>>>>> 4b375b2f8f7e2523cc0f727708659b964e8f0b4d
     <Compile Include="Models\TempModels\TempUser.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Warehouse.cs" />
@@ -88,11 +81,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908280650258_InitialCreate.resx">
-      <DependentUpon>201908280650258_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908280750038_SegundaMigracion.resx">
-      <DependentUpon>201908280750038_SegundaMigracion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908281603121_NombreMigracion.resx">
+      <DependentUpon>201908281603121_NombreMigracion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,7 +19,20 @@ namespace TeamCell
         {
             InitializeComponent();
         }
-
+        private bool isUsuarioValido()
+        {
+            if (string.IsNullOrEmpty(txtUserName.Text))
+            {
+                MessageBox.Show("Debe proporcionar el nombre de usuario", "Mensaje de Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                MessageBox.Show("Debe proporcionar la contraseña del usuario", "Mensaje de Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            return true;
+        }
         private void Limpiar()
         {
             spIdUsuario.Value = 0;
@@ -67,17 +80,20 @@ namespace TeamCell
         {
             if (spIdUsuario.Value == 0)
             {
-                UserController userCont = new UserController();
-                TempUser userTemp = new TempUser();
-                RellenarUsuario(ref userTemp);
-                if (userCont.addUser(userTemp))
+                if (isUsuarioValido())
                 {
-                    FrmSuccess.ConfirmacionFrom("Guardado");
-                    //MessageBox.Show("Se guardo correctamente.");
-                    Limpiar();
+                    UserController userCont = new UserController();
+                    TempUser userTemp = new TempUser();
+                    RellenarUsuario(ref userTemp);
+                    if (userCont.addUser(userTemp))
+                    {
+                        FrmSuccess.ConfirmacionFrom("Guardado");
+                        //MessageBox.Show("Se guardo correctamente.");
+                        Limpiar();
+                    }
+                    else
+                        MessageBox.Show("ocurrio un error al guardar.");   
                 }
-                else
-                    MessageBox.Show("ocurrio un error al guardar.");
             }
         }
 
@@ -85,17 +101,20 @@ namespace TeamCell
         {
             if(spIdUsuario.Value > 0)
             {
-                UserController userCont = new UserController();
-                TempUser userTemp = new TempUser();
-                RellenarUsuario(ref userTemp);
-                if (userCont.editUser(userTemp))
+                if (isUsuarioValido())
                 {
-                    FrmSuccess.ConfirmacionFrom("Edito");
-                    //MessageBox.Show("Se edito correctamente.");
-                    Limpiar();
+                    UserController userCont = new UserController();
+                    TempUser userTemp = new TempUser();
+                    RellenarUsuario(ref userTemp);
+                    if (userCont.editUser(userTemp))
+                    {
+                        FrmSuccess.ConfirmacionFrom("Edito");
+                        //MessageBox.Show("Se edito correctamente.");
+                        Limpiar();
+                    }
+                    else
+                        MessageBox.Show("ocurrio un error al editar.");   
                 }
-                else
-                    MessageBox.Show("ocurrio un error al editar.");
             }
         }
 
@@ -103,17 +122,20 @@ namespace TeamCell
         {
             if (spIdUsuario.Value > 0)
             {
-                UserController userCont = new UserController();
-                TempUser userTemp = new TempUser();
-                RellenarUsuario(ref userTemp);
-                userTemp.Password = "12345";
-                if (userCont.editUser(userTemp))
+                if (isUsuarioValido())
                 {
-                    MessageBox.Show("Se edito correctamente.");
-                    Limpiar();
+                    UserController userCont = new UserController();
+                    TempUser userTemp = new TempUser();
+                    RellenarUsuario(ref userTemp);
+                    userTemp.Password = "12345";
+                    if (userCont.editUser(userTemp))
+                    {
+                        MessageBox.Show("Se edito correctamente.");
+                        Limpiar();
+                    }
+                    else
+                        MessageBox.Show("ocurrio un error al editar.");   
                 }
-                else
-                    MessageBox.Show("ocurrio un error al editar.");
             }
         }
     }

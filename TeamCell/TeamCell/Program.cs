@@ -19,8 +19,12 @@ namespace TeamCell
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new FrmProvider());
             Application.Run(new frmCountry());
+=======
+            Application.Run(new frmMain());
+>>>>>>> 4a8799b6373765d17cefc61b14aaae191e1437f5
         }
     }
 }

@@ -353,7 +353,34 @@ C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProduct.resources
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.csproj.GenerateResource.Cache
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe.licenses
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe.config
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.exe
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\TeamCell.pdb
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Controller.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Model.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Controller.pdb
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\Model.pdb
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.xml
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Pais.frmCountry.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Clientes.frmClient.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmLogin.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmMain.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Notificacion.FrmSuccess.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Properties.Resources.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmEmpleado.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.frmUsuarios.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProduct.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.csproj.GenerateResource.cache
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe.licenses
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.exe
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.pdb
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.csprojResolveAssemblyReference.cache
+=======
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmBrand.resources
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProvider.resources
-=======
 >>>>>>> 4b375b2f8f7e2523cc0f727708659b964e8f0b4d
+>>>>>>> 0bde1b848a70351f4342e3678de61ab1d7cb482d

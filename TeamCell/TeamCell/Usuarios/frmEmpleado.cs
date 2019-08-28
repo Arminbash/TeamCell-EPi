@@ -19,6 +19,25 @@ namespace TeamCell
         {
             InitializeComponent();
         }
+        private bool isEmpleadoValido()
+        {
+            if (string.IsNullOrEmpty(txtPrimerNombre.Text))
+            {
+                MessageBox.Show("Debe proporcionar al menos el primer nombre del empleado", "Mensaje de Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtPrimerApellido.Text))
+            {
+                MessageBox.Show("Debe proporcionar al menos el primer apellido del empleado", "Mensaje de Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtCedula.Text))
+            {
+                MessageBox.Show("Debe proporcionar la cédula del empleado", "Mensaje de Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            return true;
+        }
         private void Limpiar()
         {
             EmployeeController empCont = new EmployeeController();
@@ -52,17 +71,20 @@ namespace TeamCell
         {
             if (spIdEmpleado.Value == 0)
             {
-                Employee emp = new Employee();
-                RellenarEmpleado(ref emp);
-                EmployeeController empCont = new EmployeeController();
-                if (empCont.AddOrUpdateEmployee(emp))
+                if (isEmpleadoValido())
                 {
-                    FrmSuccess.ConfirmacionFrom("Guardado");
-                    //MessageBox.Show("Se guardo correctamente.");
-                    Limpiar();
+                    Employee emp = new Employee();
+                    RellenarEmpleado(ref emp);
+                    EmployeeController empCont = new EmployeeController();
+                    if (empCont.AddOrUpdateEmployee(emp))
+                    {
+                        FrmSuccess.ConfirmacionFrom("Guardado");
+                        //MessageBox.Show("Se guardo correctamente.");
+                        Limpiar();
+                    }
+                    else
+                        MessageBox.Show("ocurrio un error al guardar.");   
                 }
-                else
-                    MessageBox.Show("ocurrio un error al guardar.");
             }
         }
 
@@ -70,18 +92,20 @@ namespace TeamCell
         {
             if (spIdEmpleado.Value > 0)
             {
-                Employee emp = new Employee();
-                RellenarEmpleado(ref emp);
-                EmployeeController empCont = new EmployeeController();
-                if(empCont.AddOrUpdateEmployee(emp))
+                if (isEmpleadoValido())
                 {
-                    FrmSuccess.ConfirmacionFrom("Editado");
-                    //MessageBox.Show("Se edito correctamente.");
-                    Limpiar();
+                    Employee emp = new Employee();
+                    RellenarEmpleado(ref emp);
+                    EmployeeController empCont = new EmployeeController();
+                    if (empCont.AddOrUpdateEmployee(emp))
+                    {
+                        FrmSuccess.ConfirmacionFrom("Editado");
+                        //MessageBox.Show("Se edito correctamente.");
+                        Limpiar();
+                    }
+                    else
+                        MessageBox.Show("ocurrio un error al editar.");   
                 }
-                else
-                    MessageBox.Show("ocurrio un error al editar.");
-
             }
         }
 

@@ -397,9 +397,7 @@
             this.Controls.Add(this.spIdEmpleado);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdcList);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEmpleado";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.frmEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.spIdEmpleado.Properties)).EndInit();
