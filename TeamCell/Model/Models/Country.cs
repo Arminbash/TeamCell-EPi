@@ -17,6 +17,8 @@ namespace Model.Models
         public string NameCountry { get; set; }
         public bool Status { get; set; }
 
+        public virtual ICollection<Provider> Proveedor { get; set; }
+
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)
@@ -27,7 +29,11 @@ namespace Model.Models
                 modelBuilder.Entity<Country>().HasKey<int>(s => s.IdCountry);
                 modelBuilder.Entity<Country>().Property(x => x.IdCountry).HasColumnName("Id");
                 modelBuilder.Entity<Country>().Property(x => x.NameCountry).HasColumnName("Name").HasMaxLength(200);
-                modelBuilder.Entity<Provider>().Property(x => x.Status).HasColumnName("Status").HasColumnType("Bit");
+<<<<<<< HEAD
+                modelBuilder.Entity<Provider>().Property(x => x.Status).HasColumnName("Status").HasColumnType("bit");
+=======
+                modelBuilder.Entity<Country>().Property(x => x.Status).HasColumnName("Status").HasColumnType("bit");
+>>>>>>> 616d4db58a13b8be40b2767c7d09b0050bb84b40
             }
         }
     }

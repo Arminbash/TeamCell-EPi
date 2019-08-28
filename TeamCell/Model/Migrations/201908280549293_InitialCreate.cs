@@ -59,11 +59,8 @@ namespace Model.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(maxLength: 200),
                         Status = c.Boolean(nullable: false),
-                        Provider_IdProvider = c.Int(),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("Country.Provider", t => t.Provider_IdProvider)
-                .Index(t => t.Provider_IdProvider);
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "Country.Client",
@@ -113,11 +110,9 @@ namespace Model.Migrations
         {
             DropForeignKey("Country.User", "IdEmployee", "Country.Employee");
             DropForeignKey("Country.Product", "Id_Provider", "Country.Provider");
-            DropForeignKey("Country.Country", "Provider_IdProvider", "Country.Provider");
             DropForeignKey("Country.Provider", "Id_Country", "Country.Country");
             DropForeignKey("Country.Product", "Id_Brand", "Country.Brand");
             DropIndex("Country.User", new[] { "IdEmployee" });
-            DropIndex("Country.Country", new[] { "Provider_IdProvider" });
             DropIndex("Country.Provider", new[] { "Id_Country" });
             DropIndex("Country.Product", new[] { "Id_Provider" });
             DropIndex("Country.Product", new[] { "Id_Brand" });

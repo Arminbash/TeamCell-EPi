@@ -16,18 +16,20 @@ namespace Model.Models
         public string Description { get; set; }
         public Boolean Status { get; set; }
 
+        public ICollection<Kardex> Kardex { get; set; }
+
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)
             {
                 modelBuilder.HasDefaultSchema("Inventory");
-                modelBuilder.Entity<Client>().ToTable("Warehouse");
+                modelBuilder.Entity<Warehouse>().ToTable("Warehouse");
 
-                modelBuilder.Entity<Client>().HasKey<int>(s => s.IdWarehouse);
-                modelBuilder.Entity<Client>().Property(x => x.IdWarehouse).HasColumnName("IdWarehouse");
-                modelBuilder.Entity<Client>().Property(x => x.Name).HasColumnName("Name").HasMaxLength(200);
-                modelBuilder.Entity<Client>().Property(x => x.CardIdentification).HasColumnName("Description").HasMaxLength(1000);
-                modelBuilder.Entity<Client>().Property(x => x.Status).HasColumnName("Status").HasColumnType("bit");
+                modelBuilder.Entity<Warehouse>().HasKey<int>(s => s.IdWarehouse);
+                modelBuilder.Entity<Warehouse>().Property(x => x.IdWarehouse).HasColumnName("IdWarehouse");
+                modelBuilder.Entity<Warehouse>().Property(x => x.Name).HasColumnName("Name").HasMaxLength(200);
+                modelBuilder.Entity<Warehouse>().Property(x => x.CardIdentification).HasColumnName("Description").HasMaxLength(1000);
+                modelBuilder.Entity<Warehouse>().Property(x => x.Status).HasColumnName("Status").HasColumnType("bit");
             }
         }
     }

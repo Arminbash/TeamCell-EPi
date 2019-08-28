@@ -29,7 +29,7 @@ namespace Model.Models
                 modelBuilder.Entity<Brand>().HasKey<int>(s => s.IdBrand);
                 modelBuilder.Entity<Brand>().Property(x => x.IdBrand).HasColumnName("Id");
                 modelBuilder.Entity<Brand>().Property(x => x.NameBrand).HasColumnName("Name").HasMaxLength(200);
-                modelBuilder.Entity<Brand>().Property(x => x.Status).HasColumnName("Status").HasColumnType("Bit");
+                modelBuilder.Entity<Brand>().Property(x => x.Status).HasColumnName("Status").HasColumnType("bit");
             }
         }
 
