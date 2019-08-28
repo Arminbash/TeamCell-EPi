@@ -20,6 +20,20 @@ namespace TeamCell.Clientes
             InitializeComponent();
         }
 
+        private bool isClienteValido()
+        {
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                MessageBox.Show("Debe proporcionar el nombre del cliente", "Mensaje de Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtCedula.Text))
+            {
+                MessageBox.Show("Debe proporcionar la cédula del cliente", "Mensaje de Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            return true;
+        }
         private void limpiar()
         {
             ClientController clientComp = new ClientController();
@@ -47,17 +61,20 @@ namespace TeamCell.Clientes
 
             if (spIdClient.Value==0)
             {
-                Client client = new Client();
-                RellanarClinte(ref client);
-                ClientController clientCont = new ClientController();
-                if (clientCont.AddOrUpdateClient(client))
+                if (isClienteValido())
                 {
-                    FrmSuccess.ConfirmacionFrom("Guardado");
-                    limpiar();
-                }
-                else
-                {
-                    MessageBox.Show("ocurrio un error al guardar.");
+                    Client client = new Client();
+                    RellanarClinte(ref client);
+                    ClientController clientCont = new ClientController();
+                    if (clientCont.AddOrUpdateClient(client))
+                    {
+                        FrmSuccess.ConfirmacionFrom("Guardado");
+                        limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("ocurrio un error al guardar.");
+                    }   
                 }
             }
            
@@ -67,17 +84,20 @@ namespace TeamCell.Clientes
         {
             if (spIdClient.Value >0)
             {
-                Client client = new Client();
-                RellanarClinte(ref client);
-                ClientController clientCont = new ClientController();
-                if (clientCont.AddOrUpdateClient(client))
+                if (isClienteValido())
                 {
-                    FrmSuccess.ConfirmacionFrom("Editado"); 
-                    limpiar();
-                }
-                else
-                {
-                    MessageBox.Show("ocurrio un error al editar.");
+                    Client client = new Client();
+                    RellanarClinte(ref client);
+                    ClientController clientCont = new ClientController();
+                    if (clientCont.AddOrUpdateClient(client))
+                    {
+                        FrmSuccess.ConfirmacionFrom("Editado");
+                        limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("ocurrio un error al editar.");
+                    }   
                 }
             }
         }

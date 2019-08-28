@@ -27,7 +27,8 @@ namespace Model
         public virtual DbSet<CostingPeps> CostingPeps {get; set;}
         public virtual DbSet<CostingAverage> CostingAverage {get; set;}
         public virtual DbSet<CostingWeighted> CostingWeighted {get; set;}
-
+        public virtual DbSet<Purchases> Purchases { get; set; }
+        public virtual DbSet<DetailPurchase> DetailPurchases { get; set; }
        protected override void OnModelCreating(DbModelBuilder modelBuilder)
        {
            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
@@ -44,7 +45,8 @@ namespace Model
            new CostingPeps.Map(ref modelBuilder);
            new CostingAverage.Map(ref modelBuilder);
            new CostingWeighted.Map(ref modelBuilder);
-
+            new Purchases.Map(ref modelBuilder);
+            new DetailPurchase.Map(ref modelBuilder);
             base.OnModelCreating(modelBuilder);
        }
     }

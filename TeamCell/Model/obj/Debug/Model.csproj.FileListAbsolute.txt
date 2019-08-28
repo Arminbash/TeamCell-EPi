@@ -54,3 +54,17 @@ C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.Migra
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csproj.GenerateResource.Cache
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.dll
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.pdb
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\bin\Debug\Model.dll.config
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\bin\Debug\Model.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\bin\Debug\Model.pdb
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.xml
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.dll
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.pdb
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.Migrations.NombreMigracion.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csproj.GenerateResource.cache

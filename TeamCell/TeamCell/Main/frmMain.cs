@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace TeamCell
 {
-    public partial class frmMain : Form
+    public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public int idEmpleado; 
         public frmMain()

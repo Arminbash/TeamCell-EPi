@@ -168,7 +168,7 @@
             // 
             // colFirstName
             // 
-            this.colFirstName.Caption = "Primer Nombre";
+            this.colFirstName.Caption = "Nombre Completo";
             this.colFirstName.FieldName = "FirstName";
             this.colFirstName.Name = "colFirstName";
             this.colFirstName.Visible = true;
