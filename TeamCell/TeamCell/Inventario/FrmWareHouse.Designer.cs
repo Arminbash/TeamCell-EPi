@@ -1,6 +1,6 @@
-﻿namespace TeamCell.Ventas
+﻿namespace TeamCell.Inventario
 {
-    partial class FrmBrand
+    partial class FrmWareHouse
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBrand));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmWareHouse));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -37,18 +36,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.grdcList = new DevExpress.XtraGrid.GridControl();
             this.grdList = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colNameBrand = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIdBrand = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.spIdMarca = new DevExpress.XtraEditors.SpinEdit();
-            this.colFirstName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.colIdWarehouse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.spIdAlmacen = new DevExpress.XtraEditors.SpinEdit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spIdMarca.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spIdAlmacen.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -58,12 +54,12 @@
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(1, 0);
+            this.groupBox1.Location = new System.Drawing.Point(1, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(664, 146);
-            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Marca";
+            this.groupBox1.Text = "Almacén";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnEdit
@@ -124,115 +120,94 @@
             // 
             // grdcList
             // 
-            this.grdcList.Location = new System.Drawing.Point(1, 164);
+            this.grdcList.Location = new System.Drawing.Point(1, 155);
             this.grdcList.MainView = this.grdList;
             this.grdcList.Name = "grdcList";
-            this.grdcList.Size = new System.Drawing.Size(792, 266);
-            this.grdcList.TabIndex = 13;
+            this.grdcList.Size = new System.Drawing.Size(813, 276);
+            this.grdcList.TabIndex = 14;
             this.grdcList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdList});
-            this.grdcList.ProcessGridKey += new System.Windows.Forms.KeyEventHandler(this.grList_ProcessGridKey);
-            this.grdcList.DoubleClick += new System.EventHandler(this.grList_DoubleClick);
+            this.grdcList.DoubleClick += new System.EventHandler(this.grdcList_DoubleClick);
             // 
             // grdList
             // 
             this.grdList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colNameBrand,
+            this.colName,
             this.gridColumn2,
-            this.colIdBrand});
+            this.gridColumn1,
+            this.colIdWarehouse});
             this.grdList.GridControl = this.grdcList;
             this.grdList.Name = "grdList";
             // 
-            // colNameBrand
+            // colName
             // 
-            this.colNameBrand.Caption = "Nombre";
-            this.colNameBrand.FieldName = "NameBrand";
-            this.colNameBrand.Name = "colNameBrand";
-            this.colNameBrand.OptionsColumn.AllowEdit = false;
-            this.colNameBrand.OptionsColumn.AllowFocus = false;
-            this.colNameBrand.OptionsColumn.FixedWidth = true;
-            this.colNameBrand.Visible = true;
-            this.colNameBrand.VisibleIndex = 0;
+            this.colName.Caption = "Nombre";
+            this.colName.FieldName = "Name";
+            this.colName.Name = "colName";
+            this.colName.OptionsColumn.AllowEdit = false;
+            this.colName.OptionsColumn.AllowFocus = false;
+            this.colName.OptionsColumn.FixedWidth = true;
+            this.colName.Visible = true;
+            this.colName.VisibleIndex = 0;
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Estado";
+            this.gridColumn2.Caption = "Descripcion";
             this.gridColumn2.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.gridColumn2.FieldName = "Status";
+            this.gridColumn2.FieldName = "Description";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             this.gridColumn2.OptionsColumn.FixedWidth = true;
             // 
-            // colIdBrand
+            // colIdWarehouse
             // 
-            this.colIdBrand.Caption = "IdBrand";
-            this.colIdBrand.FieldName = "IdBrand";
-            this.colIdBrand.Name = "colIdBrand";
-            this.colIdBrand.OptionsColumn.AllowEdit = false;
-            this.colIdBrand.OptionsColumn.AllowFocus = false;
-            this.colIdBrand.OptionsColumn.FixedWidth = true;
+            this.colIdWarehouse.Caption = "IdWarehouse";
+            this.colIdWarehouse.FieldName = "IdWarehouse";
+            this.colIdWarehouse.Name = "colIdWarehouse";
+            this.colIdWarehouse.OptionsColumn.AllowEdit = false;
+            this.colIdWarehouse.OptionsColumn.AllowFocus = false;
+            this.colIdWarehouse.OptionsColumn.FixedWidth = true;
             // 
-            // spIdMarca
+            // gridColumn1
             // 
-            this.spIdMarca.EditValue = new decimal(new int[] {
+            this.gridColumn1.Caption = "Estado";
+            this.gridColumn1.FieldName = "Status";
+            this.gridColumn1.Name = "gridColumn1";
+            // 
+            // spIdAlmacen
+            // 
+            this.spIdAlmacen.EditValue = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.spIdMarca.Location = new System.Drawing.Point(677, 138);
-            this.spIdMarca.Name = "spIdMarca";
-            this.spIdMarca.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.spIdAlmacen.Location = new System.Drawing.Point(671, 129);
+            this.spIdAlmacen.Name = "spIdAlmacen";
+            this.spIdAlmacen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spIdMarca.Size = new System.Drawing.Size(100, 20);
-            this.spIdMarca.TabIndex = 14;
-            this.spIdMarca.Visible = false;
-            this.spIdMarca.EditValueChanged += new System.EventHandler(this.spIdMarca_EditValueChanged);
+            this.spIdAlmacen.Size = new System.Drawing.Size(100, 20);
+            this.spIdAlmacen.TabIndex = 15;
+            this.spIdAlmacen.Visible = false;
+            this.spIdAlmacen.EditValueChanged += new System.EventHandler(this.spIdAlmacen_EditValueChanged);
             // 
-            // colFirstName
-            // 
-            this.colFirstName.Caption = "Primer Nombre";
-            this.colFirstName.FieldName = "FirstName";
-            this.colFirstName.Name = "colFirstName";
-            this.colFirstName.Visible = true;
-            this.colFirstName.VisibleIndex = 0;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Primer Nombre";
-            this.gridColumn3.FieldName = "FirstName";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 0;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 7;
-            this.bunifuElipse1.TargetControl = this.btnSave;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 7;
-            this.bunifuElipse2.TargetControl = this.btnEdit;
-            // 
-            // FrmBrand
+            // FrmWareHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.spIdMarca);
+            this.ClientSize = new System.Drawing.Size(826, 443);
+            this.Controls.Add(this.spIdAlmacen);
             this.Controls.Add(this.grdcList);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmBrand";
-            this.Text = "FrmBrand";
-            this.Load += new System.EventHandler(this.FrmBrand_Load);
+            this.Name = "FrmWareHouse";
+            this.Text = "FrmWareHouse";
+            this.Load += new System.EventHandler(this.FrmWareHouse_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spIdMarca.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spIdAlmacen.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,13 +221,10 @@
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraGrid.GridControl grdcList;
         private DevExpress.XtraGrid.Views.Grid.GridView grdList;
-        private DevExpress.XtraGrid.Columns.GridColumn colNameBrand;
+        private DevExpress.XtraGrid.Columns.GridColumn colName;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn colIdBrand;
-        private DevExpress.XtraEditors.SpinEdit spIdMarca;
-        private DevExpress.XtraGrid.Columns.GridColumn colFirstName;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private DevExpress.XtraGrid.Columns.GridColumn colIdWarehouse;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraEditors.SpinEdit spIdAlmacen;
     }
 }

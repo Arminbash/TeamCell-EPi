@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProduct));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbTipoCosteo = new System.Windows.Forms.ComboBox();
             this.checkIVA = new Bunifu.Framework.UI.BunifuCheckbox();
             this.chekLote = new Bunifu.Framework.UI.BunifuCheckbox();
             this.chekHandleIdentifier = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -63,7 +64,6 @@
             this.colIdProducto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.cbTipoCosteo = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spIdProduct.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).BeginInit();
@@ -92,14 +92,28 @@
             this.groupBox1.Controls.Add(this.txtNombreProducto);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(713, 205);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Detalles";
+            this.groupBox1.Text = "Producto";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cbTipoCosteo
+            // 
+            this.cbTipoCosteo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipoCosteo.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTipoCosteo.FormattingEnabled = true;
+            this.cbTipoCosteo.Items.AddRange(new object[] {
+            "Costeo PESP",
+            "Costo Promedio",
+            "Promedio Ponderado"});
+            this.cbTipoCosteo.Location = new System.Drawing.Point(378, 17);
+            this.cbTipoCosteo.Name = "cbTipoCosteo";
+            this.cbTipoCosteo.Size = new System.Drawing.Size(153, 26);
+            this.cbTipoCosteo.TabIndex = 34;
             // 
             // checkIVA
             // 
@@ -429,20 +443,6 @@
             // 
             this.bunifuElipse2.ElipseRadius = 7;
             this.bunifuElipse2.TargetControl = this.btnEdit;
-            // 
-            // cbTipoCosteo
-            // 
-            this.cbTipoCosteo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTipoCosteo.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipoCosteo.FormattingEnabled = true;
-            this.cbTipoCosteo.Items.AddRange(new object[] {
-            "Costeo PESP",
-            "Costo Promedio",
-            "Promedio Ponderado"});
-            this.cbTipoCosteo.Location = new System.Drawing.Point(378, 17);
-            this.cbTipoCosteo.Name = "cbTipoCosteo";
-            this.cbTipoCosteo.Size = new System.Drawing.Size(153, 26);
-            this.cbTipoCosteo.TabIndex = 34;
             // 
             // FrmProduct
             // 
