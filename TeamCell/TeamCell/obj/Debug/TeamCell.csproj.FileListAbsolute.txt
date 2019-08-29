@@ -384,4 +384,9 @@ C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProvider.resources
 >>>>>>> 4b375b2f8f7e2523cc0f727708659b964e8f0b4d
 >>>>>>> 0bde1b848a70351f4342e3678de61ab1d7cb482d
+<<<<<<< HEAD
 C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\TeamCell\bin\Debug\DevExpress.BonusSkins.v17.2.dll
+=======
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmBrand.resources
+C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\TeamCell\obj\Debug\TeamCell.Ventas.FrmProvider.resources
+>>>>>>> bb2cd20e4e2e181fd9353b6280d8dd20b9b6bac8
