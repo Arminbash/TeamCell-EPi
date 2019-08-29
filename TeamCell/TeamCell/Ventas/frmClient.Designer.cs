@@ -39,7 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.grdcList = new DevExpress.XtraGrid.GridControl();
             this.grdList = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colFirstName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIdClient = new DevExpress.XtraGrid.Columns.GridColumn();
             this.spIdClient = new DevExpress.XtraEditors.SpinEdit();
@@ -155,7 +155,7 @@
             // grdList
             // 
             this.grdList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colFirstName,
+            this.colName,
             this.gridColumn1,
             this.colIdClient});
             this.grdList.GridControl = this.grdcList;
@@ -166,13 +166,13 @@
             this.grdList.OptionsView.ShowFooter = true;
             this.grdList.OptionsView.ShowGroupPanel = false;
             // 
-            // colFirstName
+            // colName
             // 
-            this.colFirstName.Caption = "Nombre Completo";
-            this.colFirstName.FieldName = "FirstName";
-            this.colFirstName.Name = "colFirstName";
-            this.colFirstName.Visible = true;
-            this.colFirstName.VisibleIndex = 0;
+            this.colName.Caption = "Nombre";
+            this.colName.FieldName = "Name";
+            this.colName.Name = "colName";
+            this.colName.Visible = true;
+            this.colName.VisibleIndex = 0;
             // 
             // gridColumn1
             // 
@@ -247,7 +247,7 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.GridControl grdcList;
         private DevExpress.XtraGrid.Views.Grid.GridView grdList;
-        private DevExpress.XtraGrid.Columns.GridColumn colFirstName;
+        private DevExpress.XtraGrid.Columns.GridColumn colName;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn colIdClient;
         private DevExpress.XtraEditors.SpinEdit spIdClient;
