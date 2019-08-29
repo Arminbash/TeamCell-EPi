@@ -80,7 +80,7 @@ namespace TeamCell
                 det.Codigo = prod.Codigo;
                 det.Nombre = prod.Name;
                 det.Cantidad = 0;
-                det.Costo = 0;
+                det.Costo = costAveCont.getUltimoCosteoxIdProducto(prod.IdProducto);
                 det.Desc = 0;
                 det.Subtotal = 0;
                 det.IVA = 0;
