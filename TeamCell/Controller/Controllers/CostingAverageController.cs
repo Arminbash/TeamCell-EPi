@@ -6,60 +6,55 @@ using System.Text;
 using System.Threading.Tasks;
 using Model;
 using Model.Models;
-
 namespace Controller.Controllers
 {
-   public class ProductController
+   public class CostingAverageController
     {
-        public List<Product> getProduct()
+        public List<CostingAverage> getCostingAverage()
         {
             try
             {
                 using (TeamCellContext _BDContext = new TeamCellContext())
                 {
-                    var result = _BDContext.Product.ToList();
+                    var result = _BDContext.CostingAverage.ToList();
                     return result;
                 }
             }
             catch (Exception e)
             {
-                return new List<Product>();
+                return new List<CostingAverage>();
             }
         }
 
-        public bool AddOrUpdateProduct(Product prod)
+        public bool AddOrUpdateCostingAverage(CostingAverage CostingAverage)
         {
             try
             {
-                using (TeamCellContext _BDContext = new TeamCellContext())
+                using (TeamCellContext _DBContext = new TeamCellContext())
                 {
-                    _BDContext.Product.AddOrUpdate(prod);
-                    _BDContext.SaveChanges();
+                    _DBContext.CostingAverage.AddOrUpdate(CostingAverage);
+                    _DBContext.SaveChanges();
                     return true;
                 }
-
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }
         }
-
-        public Product getIdProduct(int id)
+        public CostingAverage getCostingAverageXId(int id)
         {
             try
             {
-                using (TeamCellContext _BDContext = new TeamCellContext())
+                using (TeamCellContext _DBContext = new TeamCellContext())
                 {
-                    return _BDContext.Product.Where(x => x.IdProducto == id).FirstOrDefault();
+                    return _DBContext.CostingAverage.Where(x => x.IdCostingAverage == id).FirstOrDefault();
                 }
-
             }
-            catch (Exception e)
+            catch
             {
-                return new Product();
+                return new CostingAverage();
             }
-
         }
     }
 }

@@ -9,57 +9,54 @@ using Model.Models;
 
 namespace Controller.Controllers
 {
-   public class ProductController
+public class WarehouseController
     {
-        public List<Product> getProduct()
+        public List<Warehouse> getWarehouse()
         {
             try
             {
                 using (TeamCellContext _BDContext = new TeamCellContext())
                 {
-                    var result = _BDContext.Product.ToList();
+                    var result = _BDContext.Warehouse.ToList();
                     return result;
                 }
             }
             catch (Exception e)
             {
-                return new List<Product>();
+                return new List<Warehouse>();
             }
         }
 
-        public bool AddOrUpdateProduct(Product prod)
+        public bool AddOrUpdateWarehouse(Warehouse Warehouse)
         {
             try
             {
-                using (TeamCellContext _BDContext = new TeamCellContext())
+                using (TeamCellContext _DBContext = new TeamCellContext())
                 {
-                    _BDContext.Product.AddOrUpdate(prod);
-                    _BDContext.SaveChanges();
+                    _DBContext.Warehouse.AddOrUpdate(Warehouse);
+                    _DBContext.SaveChanges();
                     return true;
                 }
-
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }
         }
-
-        public Product getIdProduct(int id)
+        public Warehouse getWarehouseXId(int id)
         {
             try
             {
-                using (TeamCellContext _BDContext = new TeamCellContext())
+                using (TeamCellContext _DBContext = new TeamCellContext())
                 {
-                    return _BDContext.Product.Where(x => x.IdProducto == id).FirstOrDefault();
+                    return _DBContext.Warehouse.Where(x => x.IdWarehouse == id).FirstOrDefault();
                 }
-
             }
-            catch (Exception e)
+            catch
             {
-                return new Product();
+                return new Warehouse();
             }
-
         }
+
     }
 }

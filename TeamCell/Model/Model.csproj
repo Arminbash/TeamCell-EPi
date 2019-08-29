@@ -47,9 +47,9 @@
   <ItemGroup>
     <Compile Include="Conecction.cs" />
     <Compile Include="DAL\TeamCellInicializer.cs" />
-    <Compile Include="Migrations\201908281603121_NombreMigracion.cs" />
-    <Compile Include="Migrations\201908281603121_NombreMigracion.Designer.cs">
-      <DependentUpon>201908281603121_NombreMigracion.cs</DependentUpon>
+    <Compile Include="Migrations\201908290321576_NombreMigracion.cs" />
+    <Compile Include="Migrations\201908290321576_NombreMigracion.Designer.cs">
+      <DependentUpon>201908290321576_NombreMigracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Billing.cs" />
@@ -81,8 +81,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908281603121_NombreMigracion.resx">
-      <DependentUpon>201908281603121_NombreMigracion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908290321576_NombreMigracion.resx">
+      <DependentUpon>201908290321576_NombreMigracion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

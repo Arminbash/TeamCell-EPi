@@ -74,7 +74,6 @@
             this.colStatus});
             this.grdList.GridControl = this.grdcList;
             this.grdList.Name = "grdList";
-            this.grdList.OptionsBehavior.Editable = false;
             this.grdList.OptionsBehavior.ReadOnly = true;
             this.grdList.OptionsFind.AlwaysVisible = true;
             this.grdList.OptionsView.ShowFooter = true;

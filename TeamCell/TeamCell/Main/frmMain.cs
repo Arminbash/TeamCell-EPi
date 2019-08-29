@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Controller;
+using Model.Models;
 namespace TeamCell
 {
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public int idEmpleado; 
+        public int idemp;
+        public static int idEmpleado; 
         public frmMain()
         {
             InitializeComponent();
@@ -20,7 +22,10 @@ namespace TeamCell
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            idEmpleado = idemp;
+            EmployeeController empCont = new EmployeeController();
+            Employee emp = empCont.getEmployeeXId(idemp);
+            lblEmpleado.Text = emp.FirstName + " " + emp.FirstSurname; 
         }
         private void openFormInPanel(object formChild)
         {
@@ -40,6 +45,11 @@ namespace TeamCell
         private void btnEmpleados_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             openFormInPanel(new frmEmpleado());
+        }
+
+        private void btnCompras_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmCompras());
         }
     }
 }

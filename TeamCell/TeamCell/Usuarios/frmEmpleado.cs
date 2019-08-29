@@ -78,7 +78,7 @@ namespace TeamCell
                     EmployeeController empCont = new EmployeeController();
                     if (empCont.AddOrUpdateEmployee(emp))
                     {
-                        FrmSuccess.ConfirmacionFrom("Guardado");
+                        FrmSuccess.ConfirmacionFrom("Guardado Correctamente.");
                         //MessageBox.Show("Se guardo correctamente.");
                         Limpiar();
                     }

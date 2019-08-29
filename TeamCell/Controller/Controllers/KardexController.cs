@@ -28,6 +28,24 @@ namespace Controller.Controllers
             }
         }
 
+
+        public decimal GetStockActual(int idProducto)
+        {
+            try
+            {
+                using (TeamCellContext _BDContext = new TeamCellContext())
+                {
+                    decimal result = _BDContext.Kardex.Where(x =>x.IdProducto == idProducto).Sum(x => x.EntryAmount - x.OutputAmount);
+                    return result;
+                }
+
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
+
         public bool AddOrUpdateClient(Kardex kardex)
         {
             try

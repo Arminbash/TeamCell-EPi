@@ -44,7 +44,7 @@ namespace TeamCell
                 if (userController.tryLogin(txtUser.Text, txtPass.Text))
                 {
                     frmMain main = new frmMain();
-                    main.idEmpleado = 0;
+                    main.idemp = userController.getEmpXCredenciales(txtUser.Text,txtPass.Text);
                     main.Show();
                     this.Visible = false;
                 }

@@ -141,5 +141,31 @@ namespace Controller
             }
         }
 
+
+        public int getEmpXCredenciales(string userName, string password)
+        {
+            try
+            {
+                using (TeamCellContext _dbContext = new TeamCellContext())
+                {
+                    var user = _dbContext.User.FirstOrDefault(x => x.UserName == userName);
+                    if (user != null)
+                    {
+                        byte[] hashedPassword = Cryptographic.HashPasswordWithSalt(Encoding.UTF8.GetBytes(password), user.Salt);
+
+                        if (hashedPassword.SequenceEqual(user.Password))
+                            return user.IdEmployee;
+                        else
+                            return 0;
+                    }
+                    return 0;
+                }
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
+
     }
 }

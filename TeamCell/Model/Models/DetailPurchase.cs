@@ -15,6 +15,7 @@ namespace Model.Models
         public decimal Quantity { get; set; }
         public decimal Cost { get; set; }
         public decimal IVA { get; set; }
+        public decimal Desc { get; set; }
 
         [ForeignKey("Purchases")]
         public Nullable<int> IdPurchases { get; set; }
@@ -35,6 +36,8 @@ namespace Model.Models
                 modelBuilder.Entity<DetailPurchase>().Property(x => x.Quantity).HasColumnName("Quantity").HasColumnType("decimal").HasPrecision(18, 2);
                 modelBuilder.Entity<DetailPurchase>().Property(x => x.Cost).HasColumnName("Cost").HasColumnType("decimal").HasPrecision(18, 2);
                 modelBuilder.Entity<DetailPurchase>().Property(x => x.IVA).HasColumnName("IVA").HasColumnType("decimal").HasPrecision(18, 2);
+                modelBuilder.Entity<DetailPurchase>().Property(x => x.Desc).HasColumnName("Desc").HasColumnType("decimal").HasPrecision(18, 2);
+
             }
         }
     }
