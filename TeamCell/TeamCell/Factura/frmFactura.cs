@@ -16,13 +16,14 @@ namespace TeamCell
     public partial class frmFactura : Form
     {
         List<DetallesGrd> listProd = new List<DetallesGrd>();
-        WarehouseController warCont = new WarehouseController();
-        ProviderControlles provCont = new ProviderControlles();
-        PurchaseController pursCont = new PurchaseController();
-        DetailPurchaseController detPurCont = new DetailPurchaseController();
+        BilingController pursCont = new BilingController();
+        DetailBilingController detPurCont = new DetailBilingController();
         KardexController kardCont = new KardexController();
         CostingAverageController costAveCont = new CostingAverageController();
         CostingWeightedController cosWeiCont = new CostingWeightedController();
+        ClientController clieCont = new ClientController();
+        WarehouseController warCont = new WarehouseController();
+
 
         public frmFactura()
         {
@@ -35,10 +36,13 @@ namespace TeamCell
             txtNoFactura.Text = "";
             dtFechaFactura.DateTime = DateTime.Now;
 
+            cbBodega.DataSource = warCont.getWarehouse();
+            cbBodega.DisplayMember = "Name";
+            cbBodega.ValueMember = "IdWarehouse";
 
-            cbCliente.DataSource = provCont.getProvider();
-            cbCliente.DisplayMember = "NameProvider";
-            cbCliente.ValueMember = "IdProvider";
+            cbCliente.DataSource = clieCont.GetClient();
+            cbCliente.DisplayMember = "Name";
+            cbCliente.ValueMember = "Id";
 
         }
         private class DetallesGrd
@@ -120,5 +124,64 @@ namespace TeamCell
             grdcDetalles.DataSource = listProd;
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Billing pur = new Billing();
+                pur.IdEmployee = frmMain.idEmpleado;
+                pur.IdClient = (int)cbCliente.SelectedValue;
+                pur.NoFactura = txtNoFactura.Text;
+                pur.DateBilling = DateTime.Now;
+
+                if (pursCont.AddOrUpdateBilling(pur))
+                {
+                    foreach (DetallesGrd x in listProd)
+                    {
+                        DetailBilling det = new DetailBilling();
+                        det.IdProduct = x.IdProducto;
+                        det.Quantity = x.Cantidad;
+                        det.Cost = x.Costo;
+                        det.IVA = x.IVA;
+                        det.Desc = x.Desc;
+                        det.IdBilling = pur.IdBilling;
+                        detPurCont.AddOrUpdateDetailBilling(det);
+
+                        Kardex kard = new Kardex();
+                        kard.IdDocument = pur.IdBilling;
+                        kard.Document = "Factura";
+                        kard.IdProducto = x.IdProducto;
+                        kard.EntryAmount = 0;
+                        kard.OutputAmount = x.Cantidad;
+                        kard.Stock = kardCont.GetStockActual(x.IdProducto) - x.Cantidad;
+                        kard.IdWarehouse =(int) cbBodega.SelectedValue;
+                        kardCont.AddOrUpdateClient(kard);
+
+                        CostingAverage costAver = new CostingAverage();
+                        costAver.IdKardex = kard.IdKardex;
+                        costAver.Cost = costAveCont.getCalcularPromedioSimple(x.IdProducto);
+                        costAveCont.AddOrUpdateCostingAverage(costAver);
+
+                        CostingWeighted costWeig = new CostingWeighted();
+                        costWeig.IdKardex = kard.IdKardex;
+                        costWeig.Cost = 0;
+                        cosWeiCont.AddOrUpdateCostingWeighted(costWeig);
+                    }
+                }
+
+                FrmSuccess.ConfirmacionFrom("Guardado Correctamente.");
+                Limpiar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ocurrio un error al guardar.");
+                Limpiar();
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }

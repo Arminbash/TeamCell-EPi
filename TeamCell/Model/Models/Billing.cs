@@ -12,9 +12,11 @@ namespace Model.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdBilling { get; set; }
+        public string NoFactura { get; set; }
         public string TipoPago { get; set; }
         public DateTime DateBilling { get; set; }
         public bool Status { get; set; }
+        public int IdEmployee { get; set; }
 
 
         [ForeignKey("Client")]
@@ -32,8 +34,10 @@ namespace Model.Models
 
                 modelBuilder.Entity<Billing>().HasKey<int>(s => s.IdBilling);
                 modelBuilder.Entity<Billing>().Property(x => x.IdBilling).HasColumnName("IdBilling");
+                modelBuilder.Entity<Billing>().Property(x => x.NoFactura).HasColumnName("NoFactura");
                 modelBuilder.Entity<Billing>().Property(x => x.DateBilling).HasColumnName("DateBilling").HasColumnType("datetime");
                 modelBuilder.Entity<Billing>().Property(x => x.Status).HasColumnName("Status").HasColumnType("bit");
+                modelBuilder.Entity<Billing>().Property(x => x.IdEmployee).HasColumnName("IdEmployee").HasColumnType("int");
             }
         }
     }

@@ -16,6 +16,7 @@ namespace Model.Models
         public string CardIdentification { get; set; }
         public Boolean Status { get; set; }
 
+        public ICollection<Billing> Billing { get; set; }
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)

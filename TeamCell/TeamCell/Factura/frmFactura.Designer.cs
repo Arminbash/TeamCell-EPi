@@ -57,6 +57,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.txtNoFactura = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbBodega = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdcDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit6)).BeginInit();
@@ -276,6 +278,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbBodega);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cbCliente);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.dtFechaFactura);
@@ -354,6 +358,7 @@
             this.btnLimpiar.TabIndex = 21;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnSave
             // 
@@ -372,6 +377,7 @@
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtNoFactura
             // 
@@ -390,6 +396,26 @@
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "No Factura:";
+            // 
+            // cbBodega
+            // 
+            this.cbBodega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBodega.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBodega.FormattingEnabled = true;
+            this.cbBodega.Location = new System.Drawing.Point(422, 49);
+            this.cbBodega.Name = "cbBodega";
+            this.cbBodega.Size = new System.Drawing.Size(153, 26);
+            this.cbBodega.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(336, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 18);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Bodega :";
             // 
             // frmFactura
             // 
@@ -450,5 +476,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtNoFactura;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbBodega;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -23,7 +23,7 @@ namespace Model.Models
             public Map(ref DbModelBuilder modelBuilder)
             {
                 modelBuilder.HasDefaultSchema("PV");
-                modelBuilder.Entity<CancelPurchase>().ToTable("Purchases");
+                modelBuilder.Entity<CancelPurchase>().ToTable("CancelPurchase");
 
                 modelBuilder.Entity<CancelPurchase>().HasKey<int>(s => s.IdCancelPurchases);
                 modelBuilder.Entity<CancelPurchase>().Property(x => x.IdCancelPurchases).HasColumnName("IdCancelPurchases");
