@@ -47,13 +47,10 @@
   <ItemGroup>
     <Compile Include="Conecction.cs" />
     <Compile Include="DAL\TeamCellInicializer.cs" />
-    <Compile Include="Migrations\201908290321576_NombreMigracion.cs" />
-    <Compile Include="Migrations\201908290321576_NombreMigracion.Designer.cs">
-      <DependentUpon>201908290321576_NombreMigracion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Billing.cs" />
     <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\CancelBilling.cs" />
+    <Compile Include="Models\CancelPurchase.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\CostingAverage.cs" />
     <Compile Include="Models\CostingPeps.cs" />
@@ -79,11 +76,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908290321576_NombreMigracion.resx">
-      <DependentUpon>201908290321576_NombreMigracion.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

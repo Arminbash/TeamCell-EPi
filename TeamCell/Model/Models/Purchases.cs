@@ -26,6 +26,7 @@ namespace Model.Models
         public Provider Provider { get; set; }
 
         public virtual ICollection<DetailPurchase> DetailPurchase { get; set; }
+        public virtual ICollection<CancelPurchase> CancelPurchase { get; set; }
         public class Map
         {
             public Map(ref DbModelBuilder modelBuilder)

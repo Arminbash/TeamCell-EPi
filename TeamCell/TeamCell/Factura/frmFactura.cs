@@ -10,9 +10,10 @@ using System.Windows.Forms;
 using Controller.Controllers;
 using Model.Models;
 using TeamCell.Notificacion;
+
 namespace TeamCell
 {
-    public partial class frmCompras : Form
+    public partial class frmFactura : Form
     {
         List<DetallesGrd> listProd = new List<DetallesGrd>();
         WarehouseController warCont = new WarehouseController();
@@ -23,7 +24,7 @@ namespace TeamCell
         CostingAverageController costAveCont = new CostingAverageController();
         CostingWeightedController cosWeiCont = new CostingWeightedController();
 
-        public frmCompras()
+        public frmFactura()
         {
             InitializeComponent();
         }
@@ -34,16 +35,12 @@ namespace TeamCell
             txtNoFactura.Text = "";
             dtFechaFactura.DateTime = DateTime.Now;
 
-            cbBodega.DataSource = warCont.getWarehouse();
-            cbBodega.DisplayMember = "Name";
-            cbBodega.ValueMember = "IdWarehouse";
 
-            cbProveedor.DataSource = provCont.getProvider();
-            cbProveedor.DisplayMember = "NameProvider";
-            cbProveedor.ValueMember = "IdProvider";
+            cbCliente.DataSource = provCont.getProvider();
+            cbCliente.DisplayMember = "NameProvider";
+            cbCliente.ValueMember = "IdProvider";
 
         }
-
         private class DetallesGrd
         {
             public int IdDetalle { get; set; }
@@ -58,7 +55,10 @@ namespace TeamCell
             public decimal Total { get; set; }
 
         }
+        private void frmFactura_Load(object sender, EventArgs e)
+        {
 
+        }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             int idProducto = 0;
@@ -87,19 +87,9 @@ namespace TeamCell
             grdcDetalles.DataSource = listProd;
         }
 
-        private void frmCompras_Load(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
-
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if(grdDetalles.GetFocusedRowCellValue(colIdProducto) != null)
+            if (grdDetalles.GetFocusedRowCellValue(colIdProducto) != null)
             {
                 int idProducto = 0;
                 idProducto = (int)grdDetalles.GetFocusedRowCellValue(colIdProducto);
@@ -112,16 +102,16 @@ namespace TeamCell
         private void grdDetalles_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {
             int idProducto = 0;
-            idProducto =(int) grdDetalles.GetRowCellValue(e.RowHandle, colIdProducto);
+            idProducto = (int)grdDetalles.GetRowCellValue(e.RowHandle, colIdProducto);
             CalcularGrid(idProducto);
         }
 
         private void CalcularGrid(int idProducto)
         {
-          decimal Cantidad=  listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().Cantidad;
-          decimal Costo = listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().Costo;
-          decimal Descuento = listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().Desc;
-          decimal IVA = listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().IVA;
+            decimal Cantidad = listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().Cantidad;
+            decimal Costo = listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().Costo;
+            decimal Descuento = listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().Desc;
+            decimal IVA = listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().IVA;
             decimal subtotal = (Cantidad * Costo) * (1 - (Descuento / 100));
             decimal Total = subtotal * (1 + (IVA / 100));
             listProd.Where(x => x.IdProducto == idProducto).FirstOrDefault().Subtotal = subtotal;
@@ -130,62 +120,5 @@ namespace TeamCell
             grdcDetalles.DataSource = listProd;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Purchases pur = new Purchases();
-                pur.IdEmployee = frmMain.idEmpleado;
-                pur.IdProvider = (int)cbProveedor.SelectedValue;
-                pur.IdWarehouse = (int)cbBodega.SelectedValue;
-                pur.Factura = txtNoFactura.Text;
-                pur.EntryDate = DateTime.Now;
-                pur.PurchaseDate = dtFechaFactura.DateTime;
-
-                if (pursCont.AddOrUpdatePurchases(pur))
-                {
-                    foreach (DetallesGrd x in listProd)
-                    {
-                        DetailPurchase det = new DetailPurchase();
-                        det.IdProduct = x.IdProducto;
-                        det.Quantity = x.Cantidad;
-                        det.Cost = x.Costo;
-                        det.IVA = x.IVA;
-                        det.Desc = x.Desc;
-                        det.IdPurchases = pur.IdPurchases;
-                        detPurCont.AddOrUpdateDetailPurchase(det);
-
-                        Kardex kard = new Kardex();
-                        kard.IdDocument = pur.IdPurchases;
-                        kard.Document = "Compra";
-                        kard.IdProducto = x.IdProducto;
-                        kard.EntryAmount = x.Cantidad;
-                        kard.OutputAmount = 0;
-                        kard.Stock = kardCont.GetStockActual(x.IdProducto) + x.Cantidad;
-                        kard.IdWarehouse = pur.IdWarehouse;
-                        kardCont.AddOrUpdateClient(kard);
-
-                        CostingAverage costAver = new CostingAverage();
-                        costAver.IdKardex = kard.IdKardex;
-                        costAver.Cost = costAveCont.getCalcularPromedioSimple(x.IdProducto);
-                        costAveCont.AddOrUpdateCostingAverage(costAver);
-
-                        CostingWeighted costWeig = new CostingWeighted();
-                        costWeig.IdKardex = kard.IdKardex;
-                        costWeig.Cost = 0;
-                        cosWeiCont.AddOrUpdateCostingWeighted(costWeig);
-                    }
-                }
-
-                FrmSuccess.ConfirmacionFrom("Guardado Correctamente.");
-                Limpiar();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("ocurrio un error al guardar.");
-                Limpiar();
-            }
-
-        }
     }
 }

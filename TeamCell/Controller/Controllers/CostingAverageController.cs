@@ -56,5 +56,51 @@ namespace Controller.Controllers
                 return new CostingAverage();
             }
         }
+        public decimal getCalcularPromedioSimple(int id)
+        {
+            try
+            {
+                using (TeamCellContext _DBContext = new TeamCellContext())
+                {
+                    var TotalMonto = (from k in _DBContext.Kardex
+                                  join ct in _DBContext.CostingAverage
+                                  on k.IdKardex equals ct.IdKardex
+                                  where k.IdProducto == id
+                                  select new { ct.Cost }).Sum(x =>x.Cost);
+
+                    var TotalCant = (from k in _DBContext.Kardex
+                                      join ct in _DBContext.CostingAverage
+                                      on k.IdKardex equals ct.IdKardex
+                                      where k.IdProducto == id
+                                      select new { ct.Cost }).Count();
+
+                    return TotalMonto / TotalCant;
+                }
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        public decimal getUltimoCosteoxIdProducto(int id)
+        {
+            try
+            {
+                using (TeamCellContext _DBContext = new TeamCellContext())
+                {
+                    var result = (from k in _DBContext.Kardex
+                                  join ct in _DBContext.CostingAverage
+                                  on k.IdKardex equals ct.IdKardex
+                                  where k.IdProducto == id
+                                  select new { ct.Cost }).LastOrDefault();
+                    return result.Cost;
+                }
+            }
+            catch
+            {
+                return 0;
+            }
+        }
     }
 }

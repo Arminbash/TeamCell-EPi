@@ -12,6 +12,7 @@ namespace Model.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdBilling { get; set; }
+        public string TipoPago { get; set; }
         public DateTime DateBilling { get; set; }
         public bool Status { get; set; }
 
@@ -20,6 +21,7 @@ namespace Model.Models
         public Nullable<int> IdClient { get; set; }
         public Client Client { get; set; }
         public ICollection<DetailBilling> DetailBilling { get; set; }
+        public ICollection<CancelBilling> CancelBilling { get; set; }
 
         public class Map
         {

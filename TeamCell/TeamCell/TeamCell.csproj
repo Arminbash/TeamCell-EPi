@@ -72,11 +72,29 @@
     <Compile Include="Compras\frmCompras.Designer.cs">
       <DependentUpon>frmCompras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Factura\frmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura\frmFactura.Designer.cs">
+      <DependentUpon>frmFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grd\frmGrdProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Grd\frmGrdProductos.Designer.cs">
       <DependentUpon>frmGrdProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmInventario.Designer.cs">
+      <DependentUpon>frmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\frmInvetarioStocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\frmInvetarioStocks.Designer.cs">
+      <DependentUpon>frmInvetarioStocks.cs</DependentUpon>
     </Compile>
     <Compile Include="Pais\frmCountry.cs">
       <SubType>Form</SubType>
@@ -143,8 +161,17 @@
     <EmbeddedResource Include="Compras\frmCompras.resx">
       <DependentUpon>frmCompras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Factura\frmFactura.resx">
+      <DependentUpon>frmFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Grd\frmGrdProductos.resx">
       <DependentUpon>frmGrdProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmInventario.resx">
+      <DependentUpon>frmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\frmInvetarioStocks.resx">
+      <DependentUpon>frmInvetarioStocks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pais\frmCountry.resx">
       <DependentUpon>frmCountry.cs</DependentUpon>

@@ -30,7 +30,9 @@ namespace Model
         public virtual DbSet<Purchases> Purchases { get; set; }
         public virtual DbSet<DetailPurchase> DetailPurchase { get; set; }
         public virtual DbSet<Segment> Segment { get; set; }
-       protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public virtual DbSet<CancelBilling> CancelBilling { get; set; }
+        public virtual DbSet<CancelPurchase> CancelPurchase { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
        {
            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
@@ -49,6 +51,8 @@ namespace Model
            new Purchases.Map(ref modelBuilder);
            new DetailPurchase.Map(ref modelBuilder);
            new Segment.Map(ref modelBuilder);
+            new CancelBilling.Map(ref modelBuilder);
+            new CancelPurchase.Map(ref modelBuilder);
             base.OnModelCreating(modelBuilder);
        }
     }
