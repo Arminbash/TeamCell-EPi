@@ -96,6 +96,12 @@
     <Compile Include="Inventario\frmInvetarioStocks.Designer.cs">
       <DependentUpon>frmInvetarioStocks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventario\FrmWareHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmWareHouse.Designer.cs">
+      <DependentUpon>FrmWareHouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pais\frmCountry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario\frmInvetarioStocks.resx">
       <DependentUpon>frmInvetarioStocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmWareHouse.resx">
+      <DependentUpon>FrmWareHouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pais\frmCountry.resx">
       <DependentUpon>frmCountry.cs</DependentUpon>

@@ -69,6 +69,7 @@ namespace TeamCell.Ventas
 
                               }).ToList();
             }
+            Limpiar();
             cboCountry.DataSource = lstCountry;
             cboCountry.ValueMember = "Id";
             cboCountry.DisplayMember = "Nombre";

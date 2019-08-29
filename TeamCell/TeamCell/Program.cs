@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeamCell.Clientes;
+using TeamCell.Inventario;
 using TeamCell.Pais;
 using TeamCell.Ventas;
 
@@ -20,7 +21,7 @@ namespace TeamCell
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new frmInventario());
+            Application.Run(new FrmWareHouse());
 
         }
     }
