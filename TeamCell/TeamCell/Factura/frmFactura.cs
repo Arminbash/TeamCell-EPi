@@ -66,6 +66,7 @@ namespace TeamCell
         private void frmFactura_Load(object sender, EventArgs e)
         {
             fillClientAndWareHouse();
+            Limpiar();
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
