@@ -49,6 +49,8 @@
             this.colTotal = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemSpinEdit5 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbBodega = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.cbCliente = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dtFechaFactura = new DevExpress.XtraEditors.DateEdit();
@@ -57,8 +59,6 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.txtNoFactura = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbBodega = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdcDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit6)).BeginInit();
@@ -213,7 +213,6 @@
             this.repositoryItemSpinEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemSpinEdit2.Name = "repositoryItemSpinEdit2";
-            this.repositoryItemSpinEdit2.ReadOnly = true;
             // 
             // colSubtotal
             // 
@@ -295,6 +294,26 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
+            // 
+            // cbBodega
+            // 
+            this.cbBodega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBodega.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBodega.FormattingEnabled = true;
+            this.cbBodega.Location = new System.Drawing.Point(422, 49);
+            this.cbBodega.Name = "cbBodega";
+            this.cbBodega.Size = new System.Drawing.Size(153, 26);
+            this.cbBodega.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(336, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 18);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Bodega :";
             // 
             // cbCliente
             // 
@@ -396,26 +415,6 @@
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "No Factura:";
-            // 
-            // cbBodega
-            // 
-            this.cbBodega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBodega.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBodega.FormattingEnabled = true;
-            this.cbBodega.Location = new System.Drawing.Point(422, 49);
-            this.cbBodega.Name = "cbBodega";
-            this.cbBodega.Size = new System.Drawing.Size(153, 26);
-            this.cbBodega.TabIndex = 26;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(336, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 18);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Bodega :";
             // 
             // frmFactura
             // 

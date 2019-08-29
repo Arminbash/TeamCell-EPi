@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.ribbonControlMain = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
@@ -43,6 +44,9 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.bntInventario = new DevExpress.XtraBars.BarButtonItem();
             this.bntStock = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -59,17 +63,16 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.PanelLateral = new DevExpress.XtraEditors.PanelControl();
             this.label1 = new System.Windows.Forms.Label();
             this.lblEmpleado = new System.Windows.Forms.Label();
             this.Container = new DevExpress.XtraEditors.PanelControl();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelLateral)).BeginInit();
             this.PanelLateral.SuspendLayout();
@@ -97,9 +100,11 @@
             this.bntInventario,
             this.bntStock,
             this.barButtonItem4,
-            this.barButtonItem5});
+            this.barButtonItem5,
+            this.barButtonItem6,
+            this.barButtonItem7});
             this.ribbonControlMain.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlMain.MaxItemId = 16;
+            this.ribbonControlMain.MaxItemId = 18;
             this.ribbonControlMain.Name = "ribbonControlMain";
             this.ribbonControlMain.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -216,7 +221,7 @@
             // 
             this.bntInventario.Caption = "Inventario";
             this.bntInventario.Id = 12;
-            this.bntInventario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.bntInventario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bntInventario.ImageOptions.Image")));
             this.bntInventario.Name = "bntInventario";
             this.bntInventario.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -231,6 +236,36 @@
             this.bntStock.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.bntStock.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Factura";
+            this.barButtonItem4.Id = 14;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick_1);
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Cliente";
+            this.barButtonItem5.Id = 15;
+            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Bodega";
+            this.barButtonItem6.Id = 16;
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -278,8 +313,10 @@
             // 
             // ribbonPageGroup4
             // 
+            this.ribbonPageGroup4.AllowTextClipping = false;
             this.ribbonPageGroup4.ItemLinks.Add(this.btnCompras);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.ShowCaptionButton = false;
             this.ribbonPageGroup4.Text = "Compras";
             // 
             // ribbonPage4
@@ -296,39 +333,53 @@
             // 
             // ribbonPageGroup5
             // 
+            this.ribbonPageGroup5.AllowTextClipping = false;
             this.ribbonPageGroup5.ItemLinks.Add(this.btnProductos);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPageGroup5.ShowCaptionButton = false;
             this.ribbonPageGroup5.Text = "Productos";
             // 
             // btnProveedor
             // 
+            this.btnProveedor.AllowTextClipping = false;
             this.btnProveedor.ItemLinks.Add(this.btnProvider);
             this.btnProveedor.Name = "btnProveedor";
+            this.btnProveedor.ShowCaptionButton = false;
             this.btnProveedor.Text = "Proveedor";
             // 
             // ribbonPageGroup6
             // 
+            this.ribbonPageGroup6.AllowTextClipping = false;
             this.ribbonPageGroup6.ItemLinks.Add(this.btnMarca);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "Marca";
             // 
             // ribbonPageGroup8
             // 
+            this.ribbonPageGroup8.AllowTextClipping = false;
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.ShowCaptionButton = false;
             this.ribbonPageGroup8.Text = "Pais";
             // 
             // ribbonPageGroup7
             // 
+            this.ribbonPageGroup7.AllowTextClipping = false;
             this.ribbonPageGroup7.ItemLinks.Add(this.bntInventario);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.ShowCaptionButton = false;
             this.ribbonPageGroup7.Text = "Invetario";
             // 
             // ribbonPageGroup10
             // 
+            this.ribbonPageGroup10.AllowTextClipping = false;
             this.ribbonPageGroup10.ItemLinks.Add(this.bntStock);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "Stock";
+            this.ribbonPageGroup10.ShowCaptionButton = false;
+            this.ribbonPageGroup10.Text = "Gestión Almacen";
             // 
             // ribbonPage5
             // 
@@ -340,9 +391,19 @@
             // 
             // ribbonPageGroup9
             // 
+            this.ribbonPageGroup9.AllowTextClipping = false;
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.ShowCaptionButton = false;
             this.ribbonPageGroup9.Text = "Factura";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.AllowTextClipping = false;
+            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            this.ribbonPageGroup12.ShowCaptionButton = false;
+            this.ribbonPageGroup12.Text = "Cliente";
             // 
             // PanelLateral
             // 
@@ -413,31 +474,15 @@
             // 
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             // 
-            // barButtonItem4
+            // barButtonItem7
             // 
-            this.barButtonItem4.Caption = "Factura";
-            this.barButtonItem4.Id = 14;
-            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image1")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            this.barButtonItem7.Caption = "Kardex";
+            this.barButtonItem7.Id = 17;
+            this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick_1);
-            // 
-            // ribbonPageGroup12
-            // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            this.ribbonPageGroup12.Text = "Cliente";
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Cliente";
-            this.barButtonItem5.Id = 15;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick_1);
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
             // frmMain
             // 
@@ -509,5 +554,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
     }
 }
