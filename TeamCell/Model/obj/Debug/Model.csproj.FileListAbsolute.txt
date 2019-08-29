@@ -70,3 +70,4 @@ C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.Migr
 C:\Users\mrlar\Documents\Johnny\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.csproj.GenerateResource.cache
 =======
 >>>>>>> 0bde1b848a70351f4342e3678de61ab1d7cb482d
+C:\Users\EDDY\Documents\GitHub\TeamCell-EPi\TeamCell\Model\obj\Debug\Model.Migrations.NombreMigracion.resources
