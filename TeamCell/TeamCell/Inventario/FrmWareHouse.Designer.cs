@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmWareHouse));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -38,9 +39,11 @@
             this.grdList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIdWarehouse = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colIdWarehouse = new DevExpress.XtraGrid.Columns.GridColumn();
             this.spIdAlmacen = new DevExpress.XtraEditors.SpinEdit();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdList)).BeginInit();
@@ -160,6 +163,12 @@
             this.gridColumn2.OptionsColumn.AllowFocus = false;
             this.gridColumn2.OptionsColumn.FixedWidth = true;
             // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Estado";
+            this.gridColumn1.FieldName = "Status";
+            this.gridColumn1.Name = "gridColumn1";
+            // 
             // colIdWarehouse
             // 
             this.colIdWarehouse.Caption = "IdWarehouse";
@@ -168,12 +177,6 @@
             this.colIdWarehouse.OptionsColumn.AllowEdit = false;
             this.colIdWarehouse.OptionsColumn.AllowFocus = false;
             this.colIdWarehouse.OptionsColumn.FixedWidth = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "Estado";
-            this.gridColumn1.FieldName = "Status";
-            this.gridColumn1.Name = "gridColumn1";
             // 
             // spIdAlmacen
             // 
@@ -190,6 +193,16 @@
             this.spIdAlmacen.TabIndex = 15;
             this.spIdAlmacen.Visible = false;
             this.spIdAlmacen.EditValueChanged += new System.EventHandler(this.spIdAlmacen_EditValueChanged);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 7;
+            this.bunifuElipse1.TargetControl = this.btnSave;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 7;
+            this.bunifuElipse2.TargetControl = this.btnEdit;
             // 
             // FrmWareHouse
             // 
@@ -226,5 +239,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colIdWarehouse;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraEditors.SpinEdit spIdAlmacen;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }
 }

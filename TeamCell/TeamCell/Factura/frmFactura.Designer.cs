@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFactura));
             this.btnEliminar = new DevExpress.XtraEditors.SimpleButton();
             this.btnAgregar = new DevExpress.XtraEditors.SimpleButton();
@@ -49,6 +50,8 @@
             this.colTotal = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemSpinEdit5 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbBodega = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.cbCliente = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dtFechaFactura = new DevExpress.XtraEditors.DateEdit();
@@ -57,8 +60,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.txtNoFactura = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbBodega = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.grdcDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit6)).BeginInit();
@@ -296,6 +299,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
             // 
+            // cbBodega
+            // 
+            this.cbBodega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBodega.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBodega.FormattingEnabled = true;
+            this.cbBodega.Location = new System.Drawing.Point(422, 49);
+            this.cbBodega.Name = "cbBodega";
+            this.cbBodega.Size = new System.Drawing.Size(153, 26);
+            this.cbBodega.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(336, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 18);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Bodega :";
+            // 
             // cbCliente
             // 
             this.cbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -397,25 +420,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "No Factura:";
             // 
-            // cbBodega
+            // bunifuElipse1
             // 
-            this.cbBodega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBodega.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBodega.FormattingEnabled = true;
-            this.cbBodega.Location = new System.Drawing.Point(422, 49);
-            this.cbBodega.Name = "cbBodega";
-            this.cbBodega.Size = new System.Drawing.Size(153, 26);
-            this.cbBodega.TabIndex = 26;
+            this.bunifuElipse1.ElipseRadius = 7;
+            this.bunifuElipse1.TargetControl = this.btnSave;
             // 
-            // label2
+            // bunifuElipse2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(336, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 18);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Bodega :";
+            this.bunifuElipse2.ElipseRadius = 7;
+            this.bunifuElipse2.TargetControl = this.btnLimpiar;
             // 
             // frmFactura
             // 
@@ -427,6 +440,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.grdcDetalles);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFactura";
             this.Text = "Factura";
             this.Load += new System.EventHandler(this.frmFactura_Load);
@@ -478,5 +492,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbBodega;
         private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }
 }

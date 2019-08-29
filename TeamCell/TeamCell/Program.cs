@@ -22,7 +22,7 @@ namespace TeamCell
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            Application.Run(new FrmWareHouse());
+            Application.Run(new frmLogin());
 
            
 

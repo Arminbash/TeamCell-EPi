@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Controller;
 using Model.Models;
 using TeamCell.Clientes;
+using TeamCell.Inventario;
 using TeamCell.Pais;
 using TeamCell.Ventas;
 
@@ -104,6 +105,11 @@ namespace TeamCell
         private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             openFormInPanel(new frmClient());
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new FrmWareHouse());
         }
     }
 }
