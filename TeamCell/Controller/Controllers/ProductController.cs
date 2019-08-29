@@ -45,21 +45,21 @@ namespace Controller.Controllers
             }
         }
 
-        //public Product getIdProduct(int id)
-        //{
-        //    try
-        //    {
-        //        using (TeamCellContext _BDContext = new TeamCellContext())
-        //        {
-        //            //return _BDContext.Product.Where(x => x.Id == id).FirstOrDefault();
-        //        }
+        public Product getIdProduct(int id)
+        {
+            try
+            {
+                using (TeamCellContext _BDContext = new TeamCellContext())
+                {
+                    return _BDContext.Product.Where(x => x.IdProducto == id).FirstOrDefault();
+                }
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return new Product();
-        //    }
+            }
+            catch (Exception e)
+            {
+                return new Product();
+            }
 
-        //}
+        }
     }
 }

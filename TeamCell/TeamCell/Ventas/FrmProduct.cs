@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controller.Controllers;
+using DevExpress.Utils.Drawing.Animation;
 using Model.Models;
 using TeamCell.Notificacion;
 
@@ -22,29 +23,71 @@ namespace TeamCell.Ventas
 
         private void limpiar()
         {
+
             ProductController prodCont = new ProductController();
             grdcList.DataSource = prodCont.getProduct();
+           
             txtNombreProducto.Text = "";
-            txtPreci.Text = "";
+            txtCodigo.Text = "";
             txtDescripcion.Text = "";
-            
+           
+            chekHandleIdentifier.Checked = false;
+            chekLote.Checked = false;
+            checkIVA.Checked = false;
+
 
         }
         private void FrmProduct_Load(object sender, EventArgs e)
         {
-            limpiar();
+            BrandController branCont = new BrandController();
+            cbMarca.DataSource = branCont.getBrand();
+            cbMarca.DisplayMember = "NameBrand";
+            cbMarca.ValueMember = "IdBrand";
+            ProviderControlles proviCont = new ProviderControlles();
+            cbProveedor.DataSource = proviCont.getProvider();
+            cbProveedor.DisplayMember = "NameProvider";
+            cbProveedor.ValueMember = "IdProvider";
+           limpiar();
 
         }
 
         private void RellenarPrducto( ref Product prod)
         {
-            //prod.IdProduct = (int) spIdProduct.Value;
-            //prod.NameProduct = txtNombreProducto.Text;
-            //prod.Preci = Decimal.Parse(txtPrecio.Text);
-            //prod.Cost = Decimal.Parse(txtCosto.Text);
-            //prod.Date = dtFecha.DateTime;
-            //prod.Existence = Int32.Parse(txtExistencia.Text);
-            //prod.Status = true;
+            prod.IdProducto = (int)spIdProduct.Value;
+            prod.Codigo = txtNombreProducto.Text;
+            prod.Name = txtNombreProducto.Text;
+            prod.Description = txtDescripcion.Text;
+            if (chekHandleIdentifier.Checked)
+            {
+                prod.HandleIdentifier = true;
+            }
+            else
+            {
+                prod.HandleIdentifier = false;
+            }
+
+            if (chekLote.Checked)
+            {
+                prod.DriveLot = true;
+            }
+            else
+            {
+                prod.DriveLot = false;
+            }
+
+            prod.TypeCosting = Convert.ToString(cbTipoCosteo.SelectedItem);
+            if (checkIVA.Checked)
+            {
+                prod.Iva = true;
+            }
+            else
+            {
+                prod.Iva = false;
+            }
+
+            prod.Id_Brand = (int) cbMarca.SelectedValue;
+            prod.Id_Provider = (int) cbProveedor.SelectedValue;
+            prod.Status = true;
 
         }
 
@@ -88,22 +131,26 @@ namespace TeamCell.Ventas
         {
             if (spIdProduct.Value>0)
             {
-                //Product prod = new Product();
-                //ProductController prodCont =new ProductController();
-                //prod = prodCont.getIdProduct((int) spIdProduct.Value);
-                //txtNombreProducto.Text = prod.NameProduct;
-                //txtPrecio.Text = Convert.ToString(prod.Preci);
-                //txtCosto.Text = Convert.ToString(prod.Cost);
-                //dtFecha.DateTime = prod.Date;
-                //txtExistencia.Text = Convert.ToString(prod.Existence);
+                Product prod = new Product();
+                ProductController prodCont = new ProductController();
+                prod = prodCont.getIdProduct((int)spIdProduct.Value);
+                txtNombreProducto.Text = prod.Name;
+                txtCodigo.Text = prod.Codigo;
+                txtDescripcion.Text = prod.Description;
+                chekHandleIdentifier.Checked = prod.HandleIdentifier;
+                chekLote.Checked = prod.DriveLot;
+                cbTipoCosteo.Text = prod.TypeCosting;
+                checkIVA.Checked = prod.Iva;
+                cbMarca.SelectedValue = prod.Id_Brand;
+                cbProveedor.SelectedValue = prod.Id_Provider;
 
             }
         }
 
         private void grdcList_DoubleClick(object sender, EventArgs e)
         {
-            if (grdList.GetFocusedRowCellValue(colIdProduct) != null)
-                spIdProduct.Value = (int)grdList.GetFocusedRowCellValue(colIdProduct);
+            if (grdList.GetFocusedRowCellValue(colIdProducto) != null)
+                spIdProduct.Value = (int)grdList.GetFocusedRowCellValue(colIdProducto);
 
         }
 

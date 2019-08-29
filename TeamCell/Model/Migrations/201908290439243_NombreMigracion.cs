@@ -8,7 +8,7 @@ namespace Model.Migrations
         public override void Up()
         {
             CreateTable(
-                "PV.Brand",
+                "Pv.Brand",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -18,7 +18,7 @@ namespace Model.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "PV.Product",
+                "Pv.Product",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -34,13 +34,13 @@ namespace Model.Migrations
                         Status = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("PV.Brand", t => t.Id_Brand)
-                .ForeignKey("PV.Provider", t => t.Id_Provider)
+                .ForeignKey("Pv.Brand", t => t.Id_Brand)
+                .ForeignKey("Pv.Provider", t => t.Id_Provider)
                 .Index(t => t.Id_Brand)
                 .Index(t => t.Id_Provider);
             
             CreateTable(
-                "PV.Provider",
+                "Pv.Provider",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -49,11 +49,11 @@ namespace Model.Migrations
                         Status = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("PV.Country", t => t.Id_Country)
+                .ForeignKey("Pv.Country", t => t.Id_Country)
                 .Index(t => t.Id_Country);
             
             CreateTable(
-                "PV.Country",
+                "Pv.Country",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -63,7 +63,7 @@ namespace Model.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "PV.Purchases",
+                "Pv.Purchases",
                 c => new
                     {
                         IdPurchases = c.Int(nullable: false, identity: true),
@@ -75,13 +75,13 @@ namespace Model.Migrations
                         IdProvider = c.Int(),
                     })
                 .PrimaryKey(t => t.IdPurchases)
-                .ForeignKey("PV.Provider", t => t.IdProvider)
-                .ForeignKey("PV.Warehouse", t => t.IdWarehouse)
+                .ForeignKey("Pv.Provider", t => t.IdProvider)
+                .ForeignKey("Pv.Warehouse", t => t.IdWarehouse)
                 .Index(t => t.IdWarehouse)
                 .Index(t => t.IdProvider);
             
             CreateTable(
-                "PV.DetailPurchase",
+                "Pv.DetailPurchase",
                 c => new
                     {
                         IdDetailPurchase = c.Int(nullable: false, identity: true),
@@ -92,13 +92,13 @@ namespace Model.Migrations
                         IdProduct = c.Int(),
                     })
                 .PrimaryKey(t => t.IdDetailPurchase)
-                .ForeignKey("PV.Product", t => t.IdProduct)
-                .ForeignKey("PV.Purchases", t => t.IdPurchases)
+                .ForeignKey("Pv.Product", t => t.IdProduct)
+                .ForeignKey("Pv.Purchases", t => t.IdPurchases)
                 .Index(t => t.IdPurchases)
                 .Index(t => t.IdProduct);
             
             CreateTable(
-                "PV.Warehouse",
+                "Pv.Warehouse",
                 c => new
                     {
                         IdWarehouse = c.Int(nullable: false, identity: true),
@@ -109,7 +109,7 @@ namespace Model.Migrations
                 .PrimaryKey(t => t.IdWarehouse);
             
             CreateTable(
-                "PV.Kardex",
+                "Pv.Kardex",
                 c => new
                     {
                         IdKardex = c.Int(nullable: false, identity: true),
@@ -122,13 +122,13 @@ namespace Model.Migrations
                         IdWarehouse = c.Int(),
                     })
                 .PrimaryKey(t => t.IdKardex)
-                .ForeignKey("PV.Product", t => t.IdProducto)
-                .ForeignKey("PV.Warehouse", t => t.IdWarehouse)
+                .ForeignKey("Pv.Product", t => t.IdProducto)
+                .ForeignKey("Pv.Warehouse", t => t.IdWarehouse)
                 .Index(t => t.IdProducto)
                 .Index(t => t.IdWarehouse);
             
             CreateTable(
-                "PV.CostingAverage",
+                "Pv.CostingAverage",
                 c => new
                     {
                         IdCostingAverage = c.Int(nullable: false, identity: true),
@@ -136,11 +136,11 @@ namespace Model.Migrations
                         IdKardex = c.Int(),
                     })
                 .PrimaryKey(t => t.IdCostingAverage)
-                .ForeignKey("PV.Kardex", t => t.IdKardex)
+                .ForeignKey("Pv.Kardex", t => t.IdKardex)
                 .Index(t => t.IdKardex);
             
             CreateTable(
-                "PV.CostingPeps",
+                "Pv.CostingPeps",
                 c => new
                     {
                         IdCostingPeps = c.Int(nullable: false, identity: true),
@@ -152,11 +152,11 @@ namespace Model.Migrations
                         IdKardex = c.Int(),
                     })
                 .PrimaryKey(t => t.IdCostingPeps)
-                .ForeignKey("PV.Kardex", t => t.IdKardex)
+                .ForeignKey("Pv.Kardex", t => t.IdKardex)
                 .Index(t => t.IdKardex);
             
             CreateTable(
-                "PV.CostingWeighted",
+                "Pv.CostingWeighted",
                 c => new
                     {
                         IdCostingWeighted = c.Int(nullable: false, identity: true),
@@ -164,11 +164,11 @@ namespace Model.Migrations
                         IdKardex = c.Int(),
                     })
                 .PrimaryKey(t => t.IdCostingWeighted)
-                .ForeignKey("PV.Kardex", t => t.IdKardex)
+                .ForeignKey("Pv.Kardex", t => t.IdKardex)
                 .Index(t => t.IdKardex);
             
             CreateTable(
-                "PV.Client",
+                "Pv.Client",
                 c => new
                     {
                         IdClient = c.Int(nullable: false, identity: true),
@@ -179,7 +179,7 @@ namespace Model.Migrations
                 .PrimaryKey(t => t.IdClient);
             
             CreateTable(
-                "PV.Employee",
+                "Pv.Employee",
                 c => new
                     {
                         IdEmployee = c.Int(nullable: false, identity: true),
@@ -195,7 +195,16 @@ namespace Model.Migrations
                 .PrimaryKey(t => t.IdEmployee);
             
             CreateTable(
-                "PV.User",
+                "Pv.Segment",
+                c => new
+                    {
+                        IdSegment = c.Int(nullable: false, identity: true),
+                        Name = c.String(maxLength: 50),
+                    })
+                .PrimaryKey(t => t.IdSegment);
+            
+            CreateTable(
+                "Pv.User",
                 c => new
                     {
                         IdUser = c.Int(nullable: false, identity: true),
@@ -206,53 +215,54 @@ namespace Model.Migrations
                         Status = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.IdUser)
-                .ForeignKey("PV.Employee", t => t.IdEmployee, cascadeDelete: true)
+                .ForeignKey("Pv.Employee", t => t.IdEmployee, cascadeDelete: true)
                 .Index(t => t.IdEmployee);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("PV.User", "IdEmployee", "PV.Employee");
-            DropForeignKey("PV.Product", "Id_Provider", "PV.Provider");
-            DropForeignKey("PV.Purchases", "IdWarehouse", "PV.Warehouse");
-            DropForeignKey("PV.Kardex", "IdWarehouse", "PV.Warehouse");
-            DropForeignKey("PV.Kardex", "IdProducto", "PV.Product");
-            DropForeignKey("PV.CostingWeighted", "IdKardex", "PV.Kardex");
-            DropForeignKey("PV.CostingPeps", "IdKardex", "PV.Kardex");
-            DropForeignKey("PV.CostingAverage", "IdKardex", "PV.Kardex");
-            DropForeignKey("PV.Purchases", "IdProvider", "PV.Provider");
-            DropForeignKey("PV.DetailPurchase", "IdPurchases", "PV.Purchases");
-            DropForeignKey("PV.DetailPurchase", "IdProduct", "PV.Product");
-            DropForeignKey("PV.Provider", "Id_Country", "PV.Country");
-            DropForeignKey("PV.Product", "Id_Brand", "PV.Brand");
-            DropIndex("PV.User", new[] { "IdEmployee" });
-            DropIndex("PV.CostingWeighted", new[] { "IdKardex" });
-            DropIndex("PV.CostingPeps", new[] { "IdKardex" });
-            DropIndex("PV.CostingAverage", new[] { "IdKardex" });
-            DropIndex("PV.Kardex", new[] { "IdWarehouse" });
-            DropIndex("PV.Kardex", new[] { "IdProducto" });
-            DropIndex("PV.DetailPurchase", new[] { "IdProduct" });
-            DropIndex("PV.DetailPurchase", new[] { "IdPurchases" });
-            DropIndex("PV.Purchases", new[] { "IdProvider" });
-            DropIndex("PV.Purchases", new[] { "IdWarehouse" });
-            DropIndex("PV.Provider", new[] { "Id_Country" });
-            DropIndex("PV.Product", new[] { "Id_Provider" });
-            DropIndex("PV.Product", new[] { "Id_Brand" });
-            DropTable("PV.User");
-            DropTable("PV.Employee");
-            DropTable("PV.Client");
-            DropTable("PV.CostingWeighted");
-            DropTable("PV.CostingPeps");
-            DropTable("PV.CostingAverage");
-            DropTable("PV.Kardex");
-            DropTable("PV.Warehouse");
-            DropTable("PV.DetailPurchase");
-            DropTable("PV.Purchases");
-            DropTable("PV.Country");
-            DropTable("PV.Provider");
-            DropTable("PV.Product");
-            DropTable("PV.Brand");
+            DropForeignKey("Pv.User", "IdEmployee", "Pv.Employee");
+            DropForeignKey("Pv.Product", "Id_Provider", "Pv.Provider");
+            DropForeignKey("Pv.Purchases", "IdWarehouse", "Pv.Warehouse");
+            DropForeignKey("Pv.Kardex", "IdWarehouse", "Pv.Warehouse");
+            DropForeignKey("Pv.Kardex", "IdProducto", "Pv.Product");
+            DropForeignKey("Pv.CostingWeighted", "IdKardex", "Pv.Kardex");
+            DropForeignKey("Pv.CostingPeps", "IdKardex", "Pv.Kardex");
+            DropForeignKey("Pv.CostingAverage", "IdKardex", "Pv.Kardex");
+            DropForeignKey("Pv.Purchases", "IdProvider", "Pv.Provider");
+            DropForeignKey("Pv.DetailPurchase", "IdPurchases", "Pv.Purchases");
+            DropForeignKey("Pv.DetailPurchase", "IdProduct", "Pv.Product");
+            DropForeignKey("Pv.Provider", "Id_Country", "Pv.Country");
+            DropForeignKey("Pv.Product", "Id_Brand", "Pv.Brand");
+            DropIndex("Pv.User", new[] { "IdEmployee" });
+            DropIndex("Pv.CostingWeighted", new[] { "IdKardex" });
+            DropIndex("Pv.CostingPeps", new[] { "IdKardex" });
+            DropIndex("Pv.CostingAverage", new[] { "IdKardex" });
+            DropIndex("Pv.Kardex", new[] { "IdWarehouse" });
+            DropIndex("Pv.Kardex", new[] { "IdProducto" });
+            DropIndex("Pv.DetailPurchase", new[] { "IdProduct" });
+            DropIndex("Pv.DetailPurchase", new[] { "IdPurchases" });
+            DropIndex("Pv.Purchases", new[] { "IdProvider" });
+            DropIndex("Pv.Purchases", new[] { "IdWarehouse" });
+            DropIndex("Pv.Provider", new[] { "Id_Country" });
+            DropIndex("Pv.Product", new[] { "Id_Provider" });
+            DropIndex("Pv.Product", new[] { "Id_Brand" });
+            DropTable("Pv.User");
+            DropTable("Pv.Segment");
+            DropTable("Pv.Employee");
+            DropTable("Pv.Client");
+            DropTable("Pv.CostingWeighted");
+            DropTable("Pv.CostingPeps");
+            DropTable("Pv.CostingAverage");
+            DropTable("Pv.Kardex");
+            DropTable("Pv.Warehouse");
+            DropTable("Pv.DetailPurchase");
+            DropTable("Pv.Purchases");
+            DropTable("Pv.Country");
+            DropTable("Pv.Provider");
+            DropTable("Pv.Product");
+            DropTable("Pv.Brand");
         }
     }
 }
