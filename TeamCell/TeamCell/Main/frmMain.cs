@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controller;
 using Model.Models;
+using TeamCell.Clientes;
+using TeamCell.Pais;
+using TeamCell.Ventas;
+
 namespace TeamCell
 {
     public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -50,6 +54,36 @@ namespace TeamCell
         private void btnCompras_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             openFormInPanel(new frmCompras());
+        }
+
+        private void btnProductos_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new FrmProduct());
+        }
+
+        private void btnProvider_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new FrmProvider());
+        }
+
+        private void btnMarca_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new FrmBrand());
+        }
+
+        private void btnCliente_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmClient());
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmCountry());
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmClient());
         }
     }
 }

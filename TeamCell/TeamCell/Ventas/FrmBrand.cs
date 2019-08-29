@@ -29,7 +29,7 @@ namespace TeamCell.Ventas
             BrandController branCont = new BrandController();
             grdcList.DataSource = branCont.getBrand();
             txtName.Text = "";
-            txtStatus.Text = "";
+        
 
         }
 
@@ -91,7 +91,7 @@ namespace TeamCell.Ventas
                 BrandController branCont = new BrandController();
                 bran = branCont.getBrandXId((int)spIdMarca.Value);
                 txtName.Text = "" + bran.NameBrand;
-                txtStatus.Text = bran.Status.ToString();
+                
                 
             }
         }
