@@ -21,9 +21,6 @@ namespace TeamCell
             Application.SetCompatibleTextRenderingDefault(false);
 
             Application.Run(new FrmProvider());
-            Application.Run(new frmCountry());
-
-            Application.Run(new frmMain());
 
         }
     }
