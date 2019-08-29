@@ -85,5 +85,25 @@ namespace TeamCell
         {
             openFormInPanel(new frmClient());
         }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmInventario());
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmInvetarioStocks());
+        }
+
+        private void barButtonItem4_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmFactura());
+        }
+
+        private void barButtonItem5_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmClient());
+        }
     }
 }
