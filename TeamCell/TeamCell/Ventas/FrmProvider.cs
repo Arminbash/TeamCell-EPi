@@ -32,7 +32,7 @@ namespace TeamCell.Ventas
             ProviderControlles provCont = new ProviderControlles();
             grdcList.DataSource = provCont.getProvider();
             txtName.Text = "";
-            txtStatus.Text = "";
+           
             
 
         }
@@ -57,6 +57,7 @@ namespace TeamCell.Ventas
 
         private void FrmProvider_Load(object sender, EventArgs e)
         {
+            Limpiar();
             List<Model.Models.TempModels.TeamProvider> lstCountry = new List<Model.Models.TempModels.TeamProvider>();
             using (Model.TeamCellContext db = new Model.TeamCellContext())
             {
@@ -88,7 +89,7 @@ namespace TeamCell.Ventas
                 ProviderControlles provCont = new ProviderControlles();
                 prov = provCont.getProviderXId((int)spIdProveedor.Value);
                 txtName.Text = "" + prov.NameProvider;
-                txtStatus.Text = prov.Status.ToString();
+               
             }
         }
 

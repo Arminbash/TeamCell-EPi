@@ -72,6 +72,12 @@
     <Compile Include="Compras\frmCompras.Designer.cs">
       <DependentUpon>frmCompras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Costing\FrmCostoPromedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costing\FrmCostoPromedio.Designer.cs">
+      <DependentUpon>FrmCostoPromedio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grd\frmGrdProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </Compile>
     <EmbeddedResource Include="Compras\frmCompras.resx">
       <DependentUpon>frmCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costing\FrmCostoPromedio.resx">
+      <DependentUpon>FrmCostoPromedio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grd\frmGrdProductos.resx">
       <DependentUpon>frmGrdProductos.cs</DependentUpon>

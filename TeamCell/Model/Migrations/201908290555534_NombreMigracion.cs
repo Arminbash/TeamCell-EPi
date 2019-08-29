@@ -88,6 +88,7 @@ namespace Model.Migrations
                         Quantity = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Cost = c.Decimal(nullable: false, precision: 18, scale: 2),
                         IVA = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Desc = c.Decimal(nullable: false, precision: 18, scale: 2),
                         IdPurchases = c.Int(),
                         IdProduct = c.Int(),
                     })
