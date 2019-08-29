@@ -34,11 +34,15 @@ namespace TeamCell
             listProd.Clear();
             grdcDetalles.DataSource = null;
             txtNoFactura.Text = "";
-            dtFechaFactura.DateTime = DateTime.Now;
-
+            fillClientAndWareHouse();
+        }
+        private void fillClientAndWareHouse()
+        {
             cbBodega.DataSource = warCont.getWarehouse();
             cbBodega.DisplayMember = "Name";
             cbBodega.ValueMember = "IdWarehouse";
+
+            dtFechaFactura.DateTime = DateTime.Now;
 
             cbCliente.DataSource = clieCont.GetClient();
             cbCliente.DisplayMember = "Name";
@@ -61,6 +65,7 @@ namespace TeamCell
         }
         private void frmFactura_Load(object sender, EventArgs e)
         {
+            fillClientAndWareHouse();
             Limpiar();
         }
         private void btnAgregar_Click(object sender, EventArgs e)

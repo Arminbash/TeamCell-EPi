@@ -13,6 +13,8 @@ using TeamCell.Clientes;
 using TeamCell.Inventario;
 using TeamCell.Pais;
 using TeamCell.Ventas;
+using TeamCell.Inventario;
+using TeamCell.Factura;
 
 namespace TeamCell
 {
@@ -30,7 +32,10 @@ namespace TeamCell
             idEmpleado = idemp;
             EmployeeController empCont = new EmployeeController();
             Employee emp = empCont.getEmployeeXId(idemp);
-            lblEmpleado.Text = emp.FirstName + " " + emp.FirstSurname; 
+            if (emp != null)
+            {
+                lblEmpleado.Text = emp.FirstName + " " + emp.FirstSurname;    
+            }
         }
         private void openFormInPanel(object formChild)
         {
@@ -110,6 +115,11 @@ namespace TeamCell
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             openFormInPanel(new FrmWareHouse());
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openFormInPanel(new frmKardex());
         }
     }
 }

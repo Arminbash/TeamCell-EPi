@@ -78,6 +78,12 @@
     <Compile Include="Factura\frmFactura.Designer.cs">
       <DependentUpon>frmFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Factura\frmKardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura\frmKardex.Designer.cs">
+      <DependentUpon>frmKardex.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grd\frmGrdProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Factura\frmFactura.resx">
       <DependentUpon>frmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factura\frmKardex.resx">
+      <DependentUpon>frmKardex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grd\frmGrdProductos.resx">
       <DependentUpon>frmGrdProductos.cs</DependentUpon>

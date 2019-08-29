@@ -11,23 +11,57 @@ namespace Controller.Controllers
 {
     public class KardexController
     {
-        public List<Kardex> GetKardex()
+        public List<dynamic> GetKardexTotalizado()
         {
             try
             {
                 using (TeamCellContext _BDContext = new TeamCellContext())
                 {
-                    var result = _BDContext.Kardex.ToList();
-                    return result;
+                    var _kardex = from k in _BDContext.Kardex
+                                  select new 
+                                  {
+                                      Bodega = k.Warehouse.Name,
+                                      Documento = k.Document,
+                                      Producto = k.Product.Name,
+                                      CantidadEntrada = k.EntryAmount,
+                                      CantidadSalida = k.OutputAmount,
+                                      stockActualizado = k.Stock 
+                                  };
+                    return _kardex.ToList<dynamic>();
                 }
 
             }
             catch (Exception)
             {
-                return new List<Kardex>();
+                throw ;
             }
         }
 
+        public List<dynamic> GetKardexByIdWareHouse(int _idWareHouse)
+        {
+            try
+            {
+                using (TeamCellContext _BDContext = new TeamCellContext())
+                {
+                    var _kardex = from k in _BDContext.Kardex
+                                  where k.IdWarehouse == _idWareHouse
+                                  select new
+                                  {
+                                      k.Document,
+                                      product = k.Product.Name,
+                                      k.EntryAmount,
+                                      k.OutputAmount,
+                                      k.Stock
+                                  };
+                    return _kardex.ToList<dynamic>();
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         public decimal GetStockActual(int idProducto)
         {
